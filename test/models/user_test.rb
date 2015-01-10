@@ -2,7 +2,11 @@ require 'test_helper'
 
 class UserTest < ActiveSupport::TestCase
 	def setup
-		@user = User.new(name: "Example", username: "example_name", email: "exampl@example.com", password: "password123", password_confirmation: "password123")
+		@user = User.new(	name: "Example", 
+							username: "example_name", 
+							email: "exampl@example.com", 
+							password: "password123", 
+							password_confirmation: "password123")
 	end
 
 	test "should be valid" do
@@ -91,6 +95,10 @@ class UserTest < ActiveSupport::TestCase
 		duplicate_user = @user.dup
 		@user.save
 		assert_not duplicate_user.valid?
+	end
+
+	test "authenticated? should return false for a user with nil digest" do
+		assert_not @user.authenticated?('')
 	end
 
 end

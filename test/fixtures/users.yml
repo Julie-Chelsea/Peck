@@ -9,3 +9,219 @@ michael:
   email: michael@example.com
   username: michaeluser
   password_digest: <%= User.digest('password') %>
+
+lana:
+  name: Lana Kane
+  email: hands@example.gov
+  username: lanauser
+  password_digest: <%= User.digest('password') %>
+
+mallory:
+  name: Mallory Archer
+  email: boss@example.gov
+  username: malloryuser
+  password_digest: <%= User.digest('password') %>
+
+ana:
+  name: Lana Kane
+  email: ands@example.gov
+  username: anauser
+  password_digest: <%= User.digest('password') %>
+
+mallory:
+  name: Mallory Archer
+  email: oss@example.gov
+  username: alloryuser
+  password_digest: <%= User.digest('password') %>
+
+na:
+  name: Lana Kane
+  email: nds@example.gov
+  username: nauser
+  password_digest: <%= User.digest('password') %>
+
+mallory:
+  name: Mallory Archer
+  email: ss@example.gov
+  username: lloryuser
+  password_digest: <%= User.digest('password') %>
+
+alana:
+  name: Lana Kane
+  email: ahands@example.gov
+  username: alanauser
+  password_digest: <%= User.digest('password') %>
+
+amallory:
+  name: Mallory Archer
+  email: aboss@example.gov
+  username: amalloryuser
+  password_digest: <%= User.digest('password') %>
+
+blana:
+  name: Lana Kane
+  email: bhands@example.gov
+  username: blanauser
+  password_digest: <%= User.digest('password') %>
+
+bmallory:
+  name: Mallory Archer
+  email: bboss@example.gov
+  username: bmalloryuser
+  password_digest: <%= User.digest('password') %>
+
+clana:
+  name: Lana Kane
+  email: chands@example.gov
+  username: clanauser
+  password_digest: <%= User.digest('password') %>
+
+cmallory:
+  name: Mallory Archer
+  email: cboss@example.gov
+  username: cmalloryuser
+  password_digest: <%= User.digest('password') %>
+
+dlana:
+  name: Lana Kane
+  email: dhands@example.gov
+  username: dlanauser
+  password_digest: <%= User.digest('password') %>
+
+dmallory:
+  name: Mallory Archer
+  email: dboss@example.gov
+  username: dmalloryuser
+  password_digest: <%= User.digest('password') %>
+
+elana:
+  name: Lana Kane
+  email: ehands@example.gov
+  username: elanauser
+  password_digest: <%= User.digest('password') %>
+
+emallory:
+  name: Mallory Archer
+  email: eboss@example.gov
+  username: emalloryuser
+  password_digest: <%= User.digest('password') %>
+
+flana:
+  name: Lana Kane
+  email: fhands@example.gov
+  username: flanauser
+  password_digest: <%= User.digest('password') %>
+
+fmallory:
+  name: Mallory Archer
+  email: fboss@example.gov
+  username: fmalloryuser
+  password_digest: <%= User.digest('password') %>
+
+glana:
+  name: Lana Kane
+  email: ghands@example.gov
+  username: glanauser
+  password_digest: <%= User.digest('password') %>
+
+gmallory:
+  name: Mallory Archer
+  email: gboss@example.gov
+  username: gmalloryuser
+  password_digest: <%= User.digest('password') %>
+
+hlana:
+  name: Lana Kane
+  email: hhands@example.gov
+  username: hlanauser
+  password_digest: <%= User.digest('password') %>
+
+hmallory:
+  name: Mallory Archer
+  email: hboss@example.gov
+  username: hmalloryuser
+  password_digest: <%= User.digest('password') %>
+
+qlana:
+  name: Lana Kane
+  email: qhands@example.gov
+  username: qlanauser
+  password_digest: <%= User.digest('password') %>
+
+qmallory:
+  name: Mallory Archer
+  email: qboss@example.gov
+  username: qmalloryuser
+  password_digest: <%= User.digest('password') %>
+
+wlana:
+  name: Lana Kane
+  email: whands@example.gov
+  username: wlanauser
+  password_digest: <%= User.digest('password') %>
+
+wmallory:
+  name: Mallory Archer
+  email: wboss@example.gov
+  username: wmalloryuser
+  password_digest: <%= User.digest('password') %>
+
+rlana:
+  name: Lana Kane
+  email: rhands@example.gov
+  username: rlanauser
+  password_digest: <%= User.digest('password') %>
+
+rmallory:
+  name: Mallory Archer
+  email: rboss@example.gov
+  username: rmalloryuser
+  password_digest: <%= User.digest('password') %>
+
+tlana:
+  name: Lana Kane
+  email: thands@example.gov
+  username: tlanauser
+  password_digest: <%= User.digest('password') %>
+
+tmallory:
+  name: Mallory Archer
+  email: ttboss@example.gov
+  username: tmalloryuser
+  password_digest: <%= User.digest('password') %>
+
+atlana:
+  name: Lana Kane
+  email: athands@example.gov
+  username: atlanauser
+  password_digest: <%= User.digest('password') %>
+
+atmallory:
+  name: Mallory Archer
+  email: attboss@example.gov
+  username: atmalloryuser
+  password_digest: <%= User.digest('password') %>
+
+stlana:
+  name: Lana Kane
+  email: sthands@example.gov
+  username: stlanauser
+  password_digest: <%= User.digest('password') %>
+
+stmallory:
+  name: Mallory Archer
+  email: sttboss@example.gov
+  username: stmalloryuser
+  password_digest: <%= User.digest('password') %>
+
+rtlana:
+  name: Lana Kane
+  email: rthands@example.gov
+  username: rtlanauser
+  password_digest: <%= User.digest('password') %>
+
+rtmallory:
+  name: Mallory Archer
+  email: rttboss@example.gov
+  username: rtmalloryuser
+  password_digest: <%= User.digest('password') %>

@@ -4,8 +4,6 @@ require File.expand_path('../application', __FILE__)
 # Initialize the Rails application.
 Rails.application.initialize!
 
-host = 'pure-temple-5080.herokuapp.com'
-
 ActionMailer::Base.smtp_settings = {
 	:address          => 'smtp.sendgrid.net',
 	:port             => '587',

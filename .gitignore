@@ -19,4 +19,4 @@
 /spring/*.pid
 
 # Ignore db:seed
-db/seed.rb
+/db/seeds.rb

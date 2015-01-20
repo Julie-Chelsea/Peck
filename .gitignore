@@ -20,3 +20,6 @@
 
 # Ignore db:seed
 /db/seeds.rb
+
+# Ignore database secrets
+/config/database.yml

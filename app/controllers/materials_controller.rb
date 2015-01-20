@@ -1,6 +1,10 @@
 class MaterialsController < ApplicationController
 
 	def show
-		@material = Material.first
+		@material = Material.second
+	end
+
+	def list
+		@materials = Material.all
 	end
 end

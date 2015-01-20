@@ -1,6 +1,6 @@
 class Material < ActiveRecord::Base
 	self.abstract_class = true
-	establish_connection "#{Rails.env}"
+	establish_connection :development
 	self.table_name = "lessons_lesson"
 
 	

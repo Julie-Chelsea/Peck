@@ -2,9 +2,10 @@
 
 <ul class="lessons">
 	<%= @materials.find_each do |material| %>
-	<li>
-		<%= material.title if material.language == 'KOR' %>
-	</li>
+		<li>
+			<%= material.title if material.language == 'KOR'%>
+			
+		</li>
 	<% end %>
 
 </ul>

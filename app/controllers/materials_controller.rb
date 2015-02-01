@@ -1,11 +1,11 @@
 class MaterialsController < ApplicationController
 
-	def show
-		@material = Material.second
+	def index
+		@material = Material.all
 	end
 
-	def list
-		@materials = Material.all
+	def show
+		@material = Material.second
 	end
 
 	def korean

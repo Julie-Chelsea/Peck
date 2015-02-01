@@ -1,0 +1,11 @@
+<% provide(:title, 'All lessons') %>
+<h1>Lessons</h1>
+
+<ul class="lessons">
+	<%= @material.find_each do |m| %>
+	<ul class="lessons">
+		<%= render @materials %>
+	</ul>
+	<% end %>
+
+</ul>

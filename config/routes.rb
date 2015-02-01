@@ -1,10 +1,7 @@
 Rails.application.routes.draw do
-  get 'lessons/new'
   get 'password_resets/new'
   get 'password_resets/edit'
   get 'sessions/new'
-  get 'materials/list'
-  get 'materials/korean'
 
   root                'static_pages#home'
   get 'help'		=>  'static_pages#help'

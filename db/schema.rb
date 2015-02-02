@@ -92,7 +92,7 @@ ActiveRecord::Schema.define(version: 20150201040843) do
     t.string "model",     limit: 100, null: false
   end
 
-  add_index "django_content_type", ["app_label", "model"], name: "django_content_type_app_label_73c4b4c0f9ff4cd8_uniq", unique: true, using: :btree
+  add_index "django_content_type", ["app_label", "model"], name: "django_content_type_app_label_250a1638029b816b_uniq", unique: true, using: :btree
 
   create_table "django_migrations", force: true do |t|
     t.string   "app",     null: false
@@ -107,158 +107,14 @@ ActiveRecord::Schema.define(version: 20150201040843) do
 
   add_index "django_session", ["expire_date"], name: "django_session_de54fa62", using: :btree
 
-  create_table "lessons_drama", force: true do |t|
-    t.integer "entertainment_id", null: false
-  end
-
-  add_index "lessons_drama", ["entertainment_id"], name: "lessons_drama_01c24c4f", using: :btree
-
-  create_table "lessons_entertainment", force: true do |t|
-    t.integer "lesson_id", null: false
-  end
-
-  add_index "lessons_entertainment", ["lesson_id"], name: "lessons_entertainment_55174b7b", using: :btree
-
-  create_table "lessons_fill_in_blank_answer", force: true do |t|
-    t.string  "answer",      limit: 50, null: false
-    t.integer "question_id",            null: false
-  end
-
-  add_index "lessons_fill_in_blank_answer", ["question_id"], name: "lessons_fill_in_blank_answer_7aa0f6ee", using: :btree
-
-  create_table "lessons_fill_in_blank_question", force: true do |t|
-    t.string  "instruction", limit: 200, null: false
-    t.string  "question",    limit: 500, null: false
-    t.integer "quiz_id",                 null: false
-  end
-
-  add_index "lessons_fill_in_blank_question", ["quiz_id"], name: "lessons_fill_in_blank_question_baedd54c", using: :btree
-
   create_table "lessons_lesson", force: true do |t|
     t.integer  "number",                null: false
     t.string   "title",     limit: 30,  null: false
     t.string   "url",       limit: 200, null: false
     t.string   "language",  limit: 30,  null: false
-    t.boolean  "visible",               null: false
     t.datetime "published",             null: false
+    t.boolean  "visible",               null: false
   end
-
-  create_table "lessons_long_translate_answer", force: true do |t|
-    t.string  "answer",      limit: 200, null: false
-    t.integer "question_id",             null: false
-  end
-
-  add_index "lessons_long_translate_answer", ["question_id"], name: "lessons_long_translate_answer_7aa0f6ee", using: :btree
-
-  create_table "lessons_long_translate_question", force: true do |t|
-    t.string  "instruction", limit: 200, null: false
-    t.string  "question",    limit: 200, null: false
-    t.integer "quiz_id",                 null: false
-  end
-
-  add_index "lessons_long_translate_question", ["quiz_id"], name: "lessons_long_translate_question_baedd54c", using: :btree
-
-  create_table "lessons_matching_question", force: true do |t|
-    t.string  "instruction", limit: 200, null: false
-    t.integer "quiz_id",                 null: false
-  end
-
-  add_index "lessons_matching_question", ["quiz_id"], name: "lessons_matching_question_baedd54c", using: :btree
-
-  create_table "lessons_multiple_choice_answer", force: true do |t|
-    t.string  "answer",      limit: 200, null: false
-    t.boolean "correct",                 null: false
-    t.integer "question_id",             null: false
-  end
-
-  add_index "lessons_multiple_choice_answer", ["question_id"], name: "lessons_multiple_choice_answer_7aa0f6ee", using: :btree
-
-  create_table "lessons_multiple_choice_question", force: true do |t|
-    t.string  "question", limit: 200, null: false
-    t.integer "quiz_id",              null: false
-  end
-
-  add_index "lessons_multiple_choice_question", ["quiz_id"], name: "lessons_multiple_choice_question_baedd54c", using: :btree
-
-  create_table "lessons_pair1", force: true do |t|
-    t.string  "item",        limit: 100, null: false
-    t.integer "question_id",             null: false
-  end
-
-  add_index "lessons_pair1", ["question_id"], name: "lessons_pair1_7aa0f6ee", using: :btree
-
-  create_table "lessons_pair2", force: true do |t|
-    t.string  "item",        limit: 100, null: false
-    t.integer "question_id",             null: false
-  end
-
-  add_index "lessons_pair2", ["question_id"], name: "lessons_pair2_7aa0f6ee", using: :btree
-
-  create_table "lessons_quiz", primary_key: "lesson_id", force: true do |t|
-  end
-
-  create_table "lessons_short_translate_answer", force: true do |t|
-    t.string  "answer",      limit: 200, null: false
-    t.integer "question_id",             null: false
-  end
-
-  add_index "lessons_short_translate_answer", ["question_id"], name: "lessons_short_translate_answer_7aa0f6ee", using: :btree
-
-  create_table "lessons_short_translate_question", force: true do |t|
-    t.string  "instruction", limit: 200, null: false
-    t.string  "question",    limit: 200, null: false
-    t.integer "quiz_id",                 null: false
-  end
-
-  add_index "lessons_short_translate_question", ["quiz_id"], name: "lessons_short_translate_question_baedd54c", using: :btree
-
-  create_table "lessons_song", force: true do |t|
-    t.string  "artist",           limit: 50,  null: false
-    t.string  "name",             limit: 100, null: false
-    t.string  "URL",              limit: 200, null: false
-    t.integer "entertainment_id",             null: false
-  end
-
-  add_index "lessons_song", ["entertainment_id"], name: "lessons_song_01c24c4f", using: :btree
-
-  create_table "lessons_song_genre", force: true do |t|
-    t.string  "genre",   limit: 50, null: false
-    t.integer "song_id",            null: false
-  end
-
-  add_index "lessons_song_genre", ["song_id"], name: "lessons_song_genre_e5c27d73", using: :btree
-
-  create_table "lessons_true_false_question", force: true do |t|
-    t.string  "question", limit: 200, null: false
-    t.boolean "true",                 null: false
-    t.integer "quiz_id",              null: false
-  end
-
-  add_index "lessons_true_false_question", ["quiz_id"], name: "lessons_true_false_question_baedd54c", using: :btree
-
-  create_table "lessons_video", force: true do |t|
-    t.string  "URL",         limit: 200, null: false
-    t.string  "instruction", limit: 200, null: false
-    t.integer "quiz_id",                 null: false
-  end
-
-  add_index "lessons_video", ["quiz_id"], name: "lessons_video_baedd54c", using: :btree
-
-  create_table "lessons_video_answer", force: true do |t|
-    t.string  "answer",      limit: 200, null: false
-    t.integer "question_id",             null: false
-  end
-
-  add_index "lessons_video_answer", ["question_id"], name: "lessons_video_answer_7aa0f6ee", using: :btree
-
-  create_table "lessons_video_question", force: true do |t|
-    t.string  "start_time", limit: 10,  null: false
-    t.string  "stop_time",  limit: 10,  null: false
-    t.string  "question",   limit: 200, null: false
-    t.integer "video_id",               null: false
-  end
-
-  add_index "lessons_video_question", ["video_id"], name: "lessons_video_question_b58b747e", using: :btree
 
   create_table "lessons_word", force: true do |t|
     t.string  "word",             limit: 200, null: false

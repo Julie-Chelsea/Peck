@@ -2,9 +2,5 @@
 <h1>Lessons</h1>
 
 <ul class="lessons">
-	<%= @materials.find_each do |m| %>
-		<li>
-			<%= m.title %>
-		</li>
-	<% end %>
+	<%= render 'materials/materials' %>
 </ul>

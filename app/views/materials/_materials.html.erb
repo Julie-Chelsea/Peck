@@ -1,4 +1,5 @@
-<li>
-	<%= m.title %>
-	<%= link_to m.title, material %>
-</li>
+<%= @materials.find_each do |m| %>
+		<li>
+			<%= m.title %>
+		</li>
+<% end %>

@@ -2,6 +2,7 @@ class MaterialsController < ApplicationController
 
 	def index
 		@materials = Material.all
+		@word = Word.all
 	end
 
 	def show

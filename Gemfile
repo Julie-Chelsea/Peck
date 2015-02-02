@@ -17,6 +17,7 @@ gem 'unicorn',			'4.8.3'
 gem 'pg',		'0.17.1'
 gem 'rails_serve_static_assets'
 gem 'rails_stdout_logging'
+gem 'rails_12factor'
 gem 'sdoc', '~> 0.4.0',          group: :doc
 
 group :development, :test do	
@@ -30,9 +31,4 @@ group :test do
 	gem 'mini_backtrace',		'0.1.3'
 	gem 'guard-minitest',		'2.3.1'
 end
-
-group :production do
-	gem 'rails_12factor',	'0.0.2'
-end
-
 

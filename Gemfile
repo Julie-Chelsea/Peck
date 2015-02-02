@@ -16,6 +16,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'unicorn',			'4.8.3'
 gem 'pg',		'0.17.1'
 gem 'rails_serve_static_assets'
+gem 'rails_stdout_logging'
 gem 'sdoc', '~> 0.4.0',          group: :doc
 
 group :development, :test do	

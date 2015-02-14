@@ -1,5 +1,5 @@
 <%= @materials.find_each do |m| %>
 		<li>
-			<%= m.title %>
+			<%= link_to m.title, m %>
 		</li>
 <% end %>

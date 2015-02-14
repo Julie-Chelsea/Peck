@@ -5,6 +5,7 @@
 			<div><h3><%= link_to "Peck", root_path, id: "logo" %></h3></div>
 			<span flex></span>
 			<button class="logOut"><%= link_to "Log out", logout_path, method: "delete" %></button>
+			<button class="userProfile"><%= link_to "Profile", current_user %></button>
 			<paper-icon-button id="account" icon="account-circle"></paper-icon-button>
 			<div id="progressBar" class="bottom fit"></div>
 

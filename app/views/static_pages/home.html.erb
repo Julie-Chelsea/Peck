@@ -1,12 +1,79 @@
-<!-- <h1>StaticPages#home</h1>
-<p>Find me in app/views/static_pages/home.html.erb</p> -->
-<div class="center jumbotron">
-<h1>JC Language</h1>
-<p>
-	This is the home page for the <a href="https://github.com/Julie-Chelsea">Julie-Chelsea Language Project</a>
-</p>
+<!-- <h1>StaticPages#home</h1>-->
+<div class="content">
+	<div class="section">
+		<%= image_tag("layouts/duck1.svg", alt: "Duck1") %>
+		<div id="section1-2">
+			<h1 class="mainPeck">Peck</h1>
+			<h3 id="subtitle">A language learning experience integrated with entertainment.</h3>
+		</div>
+	</div>
 
-<%= link_to "Sign up here", signup_path, class: "btn btn-lg btn-primary" %>
+	<div class="section">
+    	<div id="section2-1">
+    		<p center class="description">
+    			We match lessons to entertainment from the country of the language that you're learning. This way, you can internalize both the culture and the practical applications of a language.
+    		</p>
+    		<p class="description">
+    			<b>Peck</b> seeks to provide you with a fun learning experience that comes closest to helping you thoroughly understand and become fluent in a language of your choice.
+    		</p>
+    		<p class="description" id="lastparagraph">
+    			Right now, you can learn Japanese and Korean with <b>Peck</b>.
+    		</p>
+    	</div>
+
+    	<div id="section2-2">
+    		<img center-justified id="home2image" src="img/layout/duck2.svg">
+    		<button id="getStarted"><%= link_to "Get started here", signup_path%></button>
+    	</div>
+    </div>
+
+    <div class="section">
+    	<h1 class="seePeck">See Peck in Action</h1>
+	    	<h3 class="previewtitle">Lessons</h3>
+		    	<center>
+		    		<img class="preview" src="layout/comingsoon.svg">
+		    		<img class="preview" src="layout/comingsoon.svg">
+		    		<img class="preview" src="layout/comingsoon.svg">
+		    		<img class="preview" src="layout/comingsoon.svg">
+		    		<img class="preview last" src="layout/comingsoon.svg">
+		    	</center>
+
+	    	<h3 class="previewtitle">Entertainment</h3>
+		    	<center>
+		    		<img class="preview" src="layout/comingsoon.svg">
+		    		<img class="preview" src="layout/comingsoon.svg">
+		    		<img class="preview" src="layout/comingsoon.svg">
+		    		<img class="preview" src="layout/comingsoon.svg">
+		    		<img class="preview last" src="layout/comingsoon.svg">
+		    	</center>
+
+	    	<h3 class="previewtitle">Quizzes</h3>
+		    	<center>
+		    		<img class="preview" src="layout/comingsoon.svg">
+		    		<img class="preview" src="layout/comingsoon.svg">
+		    		<img class="preview" src="layout/comingsoon.svg">
+		    		<img class="preview" src="layout/comingsoon.svg">
+		    		<img class="preview last" src="layout/comingsoon.svg">
+		    	</center>
+
+	    	<h3 class="previewtitle">User areas</h3>
+		    	<center>
+		    		<img class="preview" src="layout/comingsoon.svg">
+		    		<img class="preview" src="layout/comingsoon.svg">
+		    		<img class="preview" src="layout/comingsoon.svg">
+		    		<img class="preview" src="layout/comingsoon.svg">
+		    		<img class="preview last" src="layout/comingsoon.svg">
+		    	</center>
+
+	    	<h3 class="previewtitle">Try out the first lesson</h3>
+	    		<div id="jpn">
+		    		<img id="jpnImg" src="img/KOR/countries/japan.svg">
+		    		<button raised id="tryjpn">Japanese</button>
+	    		</div>
+	    		<div id="kor">
+	    			<img id="korImg" src="img/KOR/countries/southkorea.svg">
+	    			<button raised id="trykor">Korean</button>
+	    		</div>
+    </div>
 </div>
 
-<%= link_to image_tag("rails.png", alt: "Rails logo"), 'http://rubyonrails.org/' %>

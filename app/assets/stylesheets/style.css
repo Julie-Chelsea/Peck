@@ -25,11 +25,11 @@ p {
   background: #E1BEE7; }
 
 a:link, a:visited {
-  color: #FFC107;
+  color: #0288D1;
   text-decoration: none; }
 
 a:hover, a:active {
-  color: #FF5722;
+  color: #01579B;
   text-decoration: underline; }
 
 div.page {
@@ -145,5 +145,36 @@ button.logIn {
 .orSignup {
   background: #8BC34A;
   color: #FFFFFF; }
+
+footer {
+  border-top: solid 5px green; }
+
+div.footerLine1 {
+  margin-top: 30px;
+  position: relative;
+  width: 100%;
+  height: 1px;
+  background: #E1F5FE; }
+
+div.footerLine2 {
+  position: relative;
+  width: 100%;
+  height: 1px;
+  background: #81D4FA; }
+
+ul.footerNav {
+  list-style: none;
+  text-align: right;
+  margin: 0;
+  margin-left: 400px;
+  display: inline; }
+
+li.footerNav {
+  display: inline; }
+
+p.footerNav {
+  margin: 0;
+  display: inline;
+  width: 100%; }
 
 /*# sourceMappingURL=style.css.map */

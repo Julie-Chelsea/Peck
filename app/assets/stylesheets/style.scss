@@ -142,3 +142,37 @@ button.logIn{
 	background: $lightgreen500;
 	color: $white;
 }
+
+footer{
+	border-top: solid 5px green;
+}
+
+div.footerLine1{
+	margin-top: 30px;
+	position: relative;
+	width: 100%;
+	height: 1px;
+	background: $lightblue50;
+}
+
+div.footerLine2{
+	position: relative;
+	width: 100%;
+	height: 1px;
+	background: $lightblue200;
+}
+ul.footerNav{
+	list-style: none;
+	text-align: right;
+	margin: 0;
+	margin-left: 400px;
+	display: inline;
+}
+li.footerNav{
+	display: inline;
+}
+p.footerNav{
+	margin: 0;
+	display: inline;
+	width: 100%;
+}

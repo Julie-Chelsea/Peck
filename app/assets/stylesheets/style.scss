@@ -1,87 +1,12 @@
 //Import statements
 @import 'colors';
 @import 'text';
-
+@import 'home';
+@import 'header';
+@import 'footer';
 
 div.page{
 	position: relative;
-}
-
-.pond{
-	margin-top: 100px;
-	height: 300px;
-	margin-bottom: 50px;
-
-}
-
-div.clouds{
-	position: absolute;
-	background: $cyan500;
-}
-
-.cloud{
-	position: absolute;
-	width: 200px;
-	opacity: 0.7;
-	transition: all 2s ease-in-out;
-}
-
-#cloud1{
-	top: -240px;
-	left: 0px;
-}
-
-#cloud2{
-	top: -190px;
-	left: 250px;
-}
-
-#cloud3{
-	top: -120px;
-	left: 100px;
-}
-
-#cloud4{
-	top: -90px;
-	left: 500px;
-}
-
-#cloud5{
-	top: 0px;
-	left: 640px;
-}
-
-h1.title{
-	margin-top: 50px;
-	font-size: 10em;
-	font-weight: 700;
-	@extend .font;
-	color: $lightblue900;
-}
-
-h3.slogan{
-	color: $lightblue700;
-	font-weight: 200;
-	text-align: center;
-}
-
-div.toolbar{
-	position: fixed;
-	background-color: $grey900;
-	top: 0;
-	width: 100%;
-	height: 50px;
-	z-index: 5;
-}
-
-.navPeck{
-	position: relative;
-	display: inline-block;
-	font-weight: 700;
-	color: $white;
-	margin-left: 32px;
-	margin-right: 500px;
-	margin-top: 12px;
 }
 
 button{
@@ -98,15 +23,6 @@ button{
 
 button.pop{
 	box-shadow: 0 0 7px $white;
-
-}
-button.signUp{
-	color: $lightgreen500;
-	margin-right: 5px;
-}
-
-button.logIn{
-	color: $cyan300;
 }
 
 .button{
@@ -114,65 +30,4 @@ button.logIn{
 	font-size: 1.2em;
 	font-weight: 500;
 	text-transform: uppercase;
-}
-
-.loginbox{
-	width: 200px;
-	padding: 20px;
-	background: red;
-	display: none;
-}
-
-.description{
-	background: $yellow700;
-	color: $white;
-}
-
-.preview{
-	background: $orange500;
-	color: $white;
-}
-
-.tryIt{
-	background: $deeporange600;
-	color: $white;
-}
-
-.orSignup{
-	background: $lightgreen500;
-	color: $white;
-}
-
-footer{
-	border-top: solid 5px green;
-}
-
-div.footerLine1{
-	margin-top: 30px;
-	position: relative;
-	width: 100%;
-	height: 1px;
-	background: $lightblue50;
-}
-
-div.footerLine2{
-	position: relative;
-	width: 100%;
-	height: 1px;
-	background: $lightblue200;
-}
-ul.footerNav{
-	list-style: none;
-	text-align: right;
-	margin: 0;
-	margin-left: 400px;
-	display: inline;
-}
-li.footerNav{
-	display: inline;
-}
-p.footerNav{
-	margin: 0;
-	display: inline;
-	width: 100%;
 }

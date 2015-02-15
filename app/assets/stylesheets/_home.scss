@@ -1,0 +1,90 @@
+@import 'colors';
+
+//Text
+	h1.title{
+		margin-top: 50px;
+		font-size: 10em;
+		font-weight: 700;
+		@extend .font;
+		color: $lightblue900;
+	}
+
+	h3.slogan{
+		color: $lightblue700;
+		font-weight: 200;
+		text-align: center;
+	}
+
+//Buttons
+	.loginbox{
+		width: 200px;
+		padding: 20px;
+		background: red;
+		display: none;
+	}
+
+	.description{
+		background: $yellow700;
+		color: $white;
+	}
+
+	.preview{
+		background: $orange500;
+		color: $white;
+	}
+
+	.tryIt{
+		background: $deeporange600;
+		color: $white;
+	}
+
+	.orSignup{
+		background: $lightgreen500;
+		color: $white;
+	}
+
+//Clouds
+	div.clouds{
+		position: absolute;
+		background: $cyan500;
+	}
+
+	.cloud{
+		position: absolute;
+		width: 200px;
+		opacity: 0.7;
+		transition: all 2s ease-in-out;
+	}
+
+	#cloud1{
+		top: -240px;
+		left: 0px;
+	}
+
+	#cloud2{
+		top: -190px;
+		left: 250px;
+	}
+
+	#cloud3{
+		top: -120px;
+		left: 100px;
+	}
+
+	#cloud4{
+		top: -90px;
+		left: 500px;
+	}
+
+	#cloud5{
+		top: 0px;
+		left: 640px;
+	}
+
+//Pond and ducks
+	.pond{
+		margin-top: 100px;
+		height: 300px;
+		margin-bottom: 50px;
+	}
+

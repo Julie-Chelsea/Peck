@@ -22,7 +22,7 @@ p {
   line-height: 200%; }
 
 ::selection {
-  background: #E1BEE7; }
+  background: #81D4FA; }
 
 a:link, a:visited {
   color: #0288D1;
@@ -32,13 +32,38 @@ a:hover, a:active {
   color: #01579B;
   text-decoration: underline; }
 
-div.page {
-  position: relative; }
+h1.title {
+  margin-top: 50px;
+  font-size: 10em;
+  font-weight: 700;
+  color: #01579B; }
 
-.pond {
-  margin-top: 100px;
-  height: 300px;
-  margin-bottom: 50px; }
+h3.slogan {
+  color: #0288D1;
+  font-weight: 200;
+  text-align: center; }
+
+.loginbox {
+  width: 200px;
+  padding: 20px;
+  background: red;
+  display: none; }
+
+.description {
+  background: #FBC02D;
+  color: #FFFFFF; }
+
+.preview {
+  background: #FF9800;
+  color: #FFFFFF; }
+
+.tryIt {
+  background: #F4511E;
+  color: #FFFFFF; }
+
+.orSignup {
+  background: #8BC34A;
+  color: #FFFFFF; }
 
 div.clouds {
   position: absolute;
@@ -70,16 +95,44 @@ div.clouds {
   top: 0px;
   left: 640px; }
 
-h1.title {
-  margin-top: 50px;
-  font-size: 10em;
-  font-weight: 700;
-  color: #01579B; }
+.pond {
+  margin-top: 100px;
+  height: 300px;
+  margin-bottom: 50px; }
 
-h3.slogan {
+.font, h1, h2, h3, p, h1.title, .button {
+  font-family: 'Roboto', sans-serif;
+  margin-top: 0;
+  margin-bottom: 0; }
+
+h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 3em;
+  color: black; }
+
+h2 {
+  font-size: 2.5em;
+  color: #212121; }
+
+h3 {
+  font-size: 2em;
+  color: #283593; }
+
+p {
+  font-size: 0.9em;
+  margin-bottom: 15px;
+  line-height: 200%; }
+
+::selection {
+  background: #81D4FA; }
+
+a:link, a:visited {
   color: #0288D1;
-  font-weight: 200;
-  text-align: center; }
+  text-decoration: none; }
+
+a:hover, a:active {
+  color: #01579B;
+  text-decoration: underline; }
 
 div.toolbar {
   position: fixed;
@@ -98,20 +151,6 @@ div.toolbar {
   margin-right: 500px;
   margin-top: 12px; }
 
-button {
-  margin: 0;
-  padding-left: 10px;
-  padding-right: 10px;
-  border: solid 1px #FFFFFF;
-  border-radius: 12px;
-  top: 0;
-  background: transparent;
-  position: relative;
-  display: inline-block; }
-
-button.pop {
-  box-shadow: 0 0 7px #FFFFFF; }
-
 button.signUp {
   color: #8BC34A;
   margin-right: 5px; }
@@ -119,35 +158,39 @@ button.signUp {
 button.logIn {
   color: #4DD0E1; }
 
-.button {
-  font-size: 1.2em;
-  font-weight: 500;
-  text-transform: uppercase; }
+.font, h1, h2, h3, p, h1.title, .button {
+  font-family: 'Roboto', sans-serif;
+  margin-top: 0;
+  margin-bottom: 0; }
 
-.loginbox {
-  width: 200px;
-  padding: 20px;
-  background: red;
-  display: none; }
+h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 3em;
+  color: black; }
 
-.description {
-  background: #FBC02D;
-  color: #FFFFFF; }
+h2 {
+  font-size: 2.5em;
+  color: #212121; }
 
-.preview {
-  background: #FF9800;
-  color: #FFFFFF; }
+h3 {
+  font-size: 2em;
+  color: #283593; }
 
-.tryIt {
-  background: #F4511E;
-  color: #FFFFFF; }
+p {
+  font-size: 0.9em;
+  margin-bottom: 15px;
+  line-height: 200%; }
 
-.orSignup {
-  background: #8BC34A;
-  color: #FFFFFF; }
+::selection {
+  background: #81D4FA; }
 
-footer {
-  border-top: solid 5px green; }
+a:link, a:visited {
+  color: #0288D1;
+  text-decoration: none; }
+
+a:hover, a:active {
+  color: #01579B;
+  text-decoration: underline; }
 
 div.footerLine1 {
   margin-top: 30px;
@@ -176,5 +219,27 @@ p.footerNav {
   margin: 0;
   display: inline;
   width: 100%; }
+
+div.page {
+  position: relative; }
+
+button {
+  margin: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: solid 1px #FFFFFF;
+  border-radius: 12px;
+  top: 0;
+  background: transparent;
+  position: relative;
+  display: inline-block; }
+
+button.pop {
+  box-shadow: 0 0 7px #FFFFFF; }
+
+.button {
+  font-size: 1.2em;
+  font-weight: 500;
+  text-transform: uppercase; }
 
 /*# sourceMappingURL=style.css.map */

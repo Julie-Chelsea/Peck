@@ -1,0 +1,47 @@
+@import 'colors';
+
+.font{
+	font-family: 'Roboto';
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+//Standard text styles
+
+h1{
+	@extend .font;
+	font-size: 3em;
+}
+
+h2{
+	@extend .font;
+	font-size: 2.5em;
+	color: $grey900;
+}
+
+h3{
+	@extend .font;
+	font-size: 2em;
+	color: $indigo800;
+}
+
+p{
+	@extend .font;
+	font-size: 0.9em;
+	margin-bottom: 15px;
+	line-height: 200%;
+}
+
+::selection{
+	background: $purple100;
+}
+
+a:link, a:visited{
+	color: $amber500;
+	text-decoration: none;
+}
+
+a:hover, a:active{
+	color: $deeporange500;
+	text-decoration: underline;
+}

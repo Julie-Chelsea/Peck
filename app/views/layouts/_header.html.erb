@@ -1,6 +1,10 @@
-<header class="navbar navbar-fixed-top navbar-inverse">
-	<div class="container">
-		<% if logged_in? %>
+<header class="toolbar">
+	<div class="toolbar">
+		<h3 class="navPeck">Peck</h3>
+		<span flex></span>
+		
+
+	<% if logged_in? %>
 			<paper-icon-button id="navicon" icon="menu"></paper-icon-button>
 			<div><h3><%= link_to "Peck", root_path, id: "logo" %></h3></div>
 			<span flex></span>
@@ -10,6 +14,8 @@
 			<div id="progressBar" class="bottom fit"></div>
 
 		<% else %>
+			<button class="signUp"><p class="button">sign up</p></button>
+			<button class="logIn"><p class="button">log in</p></button>
 			<div><h3><%= link_to "Peck", root_path, id: "logo" %></h3></div>
 			<span flex></span>
 			<button class="signUp"><%= link_to "Sign up", signup_path %></button>

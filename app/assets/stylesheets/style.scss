@@ -4,8 +4,23 @@
 
 div.page{
 	position: relative;
-	background-color: $red500;
 
+}
+
+
+
+h1.title{
+	margin-top: 50px;
+	font-size: 10em;
+	font-weight: 700;
+	@extend .font;
+	color: $lightblue900;
+}
+
+h3.slogan{
+	color: $lightblue700;
+	font-weight: 200;
+	text-align: center;
 }
 
 div.toolbar{
@@ -63,4 +78,5 @@ button.logIn{
 	width: 200px;
 	padding: 20px;
 	background: red;
+	display: none;
 }

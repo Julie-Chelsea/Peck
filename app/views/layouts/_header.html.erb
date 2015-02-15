@@ -6,7 +6,7 @@
 
 	<% if logged_in? %>
 			<paper-icon-button id="navicon" icon="menu"></paper-icon-button>
-			<div><h3><%= link_to "Peck", root_path, id: "logo" %></h3></div>
+			<!-- <div><h3><%= link_to "Peck", root_path, id: "logo" %></h3></div> -->
 			<span flex></span>
 			<button class="logOut"><%= link_to "Log out", logout_path, method: "delete" %></button>
 			<button class="userProfile"><%= link_to "Profile", current_user %></button>
@@ -16,10 +16,10 @@
 		<% else %>
 			<button class="signUp"><p class="button">sign up</p></button>
 			<button class="logIn"><p class="button">log in</p></button>
-			<div><h3><%= link_to "Peck", root_path, id: "logo" %></h3></div>
-			<span flex></span>
+			<!-- <div><h3><%= link_to "Peck", root_path, id: "logo" %></h3></div> -->
+			<!-- <span flex></span>
 			<button class="signUp"><%= link_to "Sign up", signup_path %></button>
-			<button class="logIn">Log in</button>
+			<button class="logIn">Log in</button> -->
 			<div id="progressBar" class="bottom fit"></div>
 
 			<div class="loginbox">

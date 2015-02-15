@@ -1,10 +1,12 @@
-.font, h1, h2, h3, p, .button {
-  font-family: 'Roboto';
+.font, h1, h2, h3, p, h1.title, .button {
+  font-family: 'Roboto', sans-serif;
   margin-top: 0;
   margin-bottom: 0; }
 
 h1 {
-  font-size: 3em; }
+  font-family: 'Roboto', sans-serif;
+  font-size: 3em;
+  color: black; }
 
 h2 {
   font-size: 2.5em;
@@ -31,8 +33,18 @@ a:hover, a:active {
   text-decoration: underline; }
 
 div.page {
-  position: relative;
-  background-color: #F44336; }
+  position: relative; }
+
+h1.title {
+  margin-top: 50px;
+  font-size: 10em;
+  font-weight: 700;
+  color: #01579B; }
+
+h3.slogan {
+  color: #0288D1;
+  font-weight: 200;
+  text-align: center; }
 
 div.toolbar {
   position: fixed;
@@ -80,6 +92,7 @@ button.logIn {
 .loginbox {
   width: 200px;
   padding: 20px;
-  background: red; }
+  background: red;
+  display: none; }
 
 /*# sourceMappingURL=style.css.map */

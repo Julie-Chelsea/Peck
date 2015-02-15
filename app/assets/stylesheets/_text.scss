@@ -1,7 +1,7 @@
 @import 'colors';
 
 .font{
-	font-family: 'Roboto';
+	font-family: 'Roboto', sans-serif;
 	margin-top: 0;
 	margin-bottom: 0;
 }
@@ -10,7 +10,9 @@
 
 h1{
 	@extend .font;
+	font-family: 'Roboto', sans-serif;
 	font-size: 3em;
+	color: black;
 }
 
 h2{

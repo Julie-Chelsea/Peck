@@ -32,6 +32,40 @@ a:hover, a:active {
   color: #01579B;
   text-decoration: underline; }
 
+.font, h1, h2, h3, p, h1.title, .button {
+  font-family: 'Roboto', sans-serif;
+  margin-top: 0;
+  margin-bottom: 0; }
+
+h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 3em;
+  color: black; }
+
+h2 {
+  font-size: 2.5em;
+  color: #212121; }
+
+h3 {
+  font-size: 2em;
+  color: #283593; }
+
+p {
+  font-size: 0.9em;
+  margin-bottom: 15px;
+  line-height: 200%; }
+
+::selection {
+  background: #81D4FA; }
+
+a:link, a:visited {
+  color: #0288D1;
+  text-decoration: none; }
+
+a:hover, a:active {
+  color: #01579B;
+  text-decoration: underline; }
+
 h1.title {
   margin-top: 50px;
   font-size: 10em;

@@ -1,28 +1,25 @@
 <header class="toolbar">
 	<div class="toolbar">
-		<h3 class="navPeck">Peck</h3>
+		<h3 class="navPeck"><%= link_to "Peck", root_path, class: "no" %></h3>
 		<span flex></span>
-		
 
 	<% if logged_in? %>
 			<paper-icon-button id="navicon" icon="menu"></paper-icon-button>
-			<!-- <div><h3><%= link_to "Peck", root_path, id: "logo" %></h3></div> -->
 			<span flex></span>
 			<button class="logOut"><%= link_to "Log out", logout_path, method: "delete" %></button>
 			<button class="userProfile"><%= link_to "Profile", current_user %></button>
 			<paper-icon-button id="account" icon="account-circle"></paper-icon-button>
+
 			<div id="progressBar" class="bottom fit"></div>
 
 		<% else %>
-			<button class="signUp"><p class="button">sign up</p></button>
-			<button class="logIn"><p class="button">log in</p></button>
-			<!-- <div><h3><%= link_to "Peck", root_path, id: "logo" %></h3></div> -->
-			<!-- <span flex></span>
-			<button class="signUp"><%= link_to "Sign up", signup_path %></button>
-			<button class="logIn">Log in</button> -->
+			<button class="signUp"><p class="button"><%= link_to "Sign up", signup_path, class: "no" %></p></button>
+			<button class="logIn"><p class="button"><%= link_to "log in", login_path, class: "no" %></p></button>
+
+
 			<div id="progressBar" class="bottom fit"></div>
 
-			<div class="loginbox">
+			<!-- <div class="loginbox">
 		    	<h4 class="login">Log in</h4>
 		    		<%= form_for(:session, url: login_path) do |f| %>
 
@@ -41,8 +38,10 @@
 
 					<%= f.submit "Log in", class: "btn btn-promary" %>
 					<% end %>
-		    </div>
+		    </div> -->
 
 		<% end %>
 	</div>
 </header>
+
+<!-- <div><h3><%= link_to "Peck", root_path, id: "logo" %></h3></div> -->

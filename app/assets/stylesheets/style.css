@@ -1,4 +1,4 @@
-.font, h1, h2, h3, p, h1.title, .button {
+.font, h1, h2, h3, p, h1.title, h1.signUp, .button {
   font-family: 'Roboto', sans-serif;
   margin-top: 0;
   margin-bottom: 0; }
@@ -32,7 +32,15 @@ a:hover, a:active {
   color: #01579B;
   text-decoration: underline; }
 
-.font, h1, h2, h3, p, h1.title, .button {
+a.no:link, a.no:visited {
+  color: inherit;
+  text-decoration: none; }
+
+a.no:hover, a.no:active {
+  color: inherit;
+  text-decoration: none; }
+
+.font, h1, h2, h3, p, h1.title, h1.signUp, .button {
   font-family: 'Roboto', sans-serif;
   margin-top: 0;
   margin-bottom: 0; }
@@ -65,6 +73,14 @@ a:link, a:visited {
 a:hover, a:active {
   color: #01579B;
   text-decoration: underline; }
+
+a.no:link, a.no:visited {
+  color: inherit;
+  text-decoration: none; }
+
+a.no:hover, a.no:active {
+  color: inherit;
+  text-decoration: none; }
 
 h1.title {
   margin-top: 50px;
@@ -134,7 +150,7 @@ div.clouds {
   height: 300px;
   margin-bottom: 50px; }
 
-.font, h1, h2, h3, p, h1.title, .button {
+.font, h1, h2, h3, p, h1.title, h1.signUp, .button {
   font-family: 'Roboto', sans-serif;
   margin-top: 0;
   margin-bottom: 0; }
@@ -167,6 +183,67 @@ a:link, a:visited {
 a:hover, a:active {
   color: #01579B;
   text-decoration: underline; }
+
+a.no:link, a.no:visited {
+  color: inherit;
+  text-decoration: none; }
+
+a.no:hover, a.no:active {
+  color: inherit;
+  text-decoration: none; }
+
+div.signupHolder {
+  position: relative;
+  width: 100%; }
+
+h1.signUp {
+  position: relative;
+  font-family: 'Roboto', sans-serif;
+  font-size: 3em;
+  color: black;
+  left: -165px; }
+
+.font, h1, h2, h3, p, h1.title, h1.signUp, .button {
+  font-family: 'Roboto', sans-serif;
+  margin-top: 0;
+  margin-bottom: 0; }
+
+h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 3em;
+  color: black; }
+
+h2 {
+  font-size: 2.5em;
+  color: #212121; }
+
+h3 {
+  font-size: 2em;
+  color: #283593; }
+
+p {
+  font-size: 0.9em;
+  margin-bottom: 15px;
+  line-height: 200%; }
+
+::selection {
+  background: #81D4FA; }
+
+a:link, a:visited {
+  color: #0288D1;
+  text-decoration: none; }
+
+a:hover, a:active {
+  color: #01579B;
+  text-decoration: underline; }
+
+a.no:link, a.no:visited {
+  color: inherit;
+  text-decoration: none; }
+
+a.no:hover, a.no:active {
+  color: inherit;
+  text-decoration: none; }
 
 div.toolbar {
   position: fixed;
@@ -192,7 +269,7 @@ button.signUp {
 button.logIn {
   color: #4DD0E1; }
 
-.font, h1, h2, h3, p, h1.title, .button {
+.font, h1, h2, h3, p, h1.title, h1.signUp, .button {
   font-family: 'Roboto', sans-serif;
   margin-top: 0;
   margin-bottom: 0; }
@@ -225,6 +302,14 @@ a:link, a:visited {
 a:hover, a:active {
   color: #01579B;
   text-decoration: underline; }
+
+a.no:link, a.no:visited {
+  color: inherit;
+  text-decoration: none; }
+
+a.no:hover, a.no:active {
+  color: inherit;
+  text-decoration: none; }
 
 div.footerLine1 {
   margin-top: 30px;

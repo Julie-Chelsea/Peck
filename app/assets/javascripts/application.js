@@ -17,18 +17,22 @@
 
 //Place the login box
 
-windowWidth = $(window).width();
-loginPosition = windowWidth - 290 //normal loginbox full width is 270, added 10
-$(".logIn").click(function(){
-	$(".loginbox")
-		.toggle(0)
-		.css("display", "block")
-		.css("left", loginPosition)
-})
+// windowWidth = $(window).width();
+// loginPosition = windowWidth - 290 //normal loginbox full width is 270, added 10
+// $("button.logIn").click(function(){
+// 	$(".loginbox")
+// 		.toggle(0)
+// 		.css("display", "block")
+// 		.css("left", "500px")
+// })
 
-$(".content").click(function(){
-	$(".loginbox").hide(0)
-})
+// $(".navPeck").click(function(){
+// 	$(this).hide(500)
+// })
+
+// $(".content").click(function(){
+// 	$(".loginbox").hide(0)
+// })
 
 //Signup page
 	$("#firstName").click(function(){

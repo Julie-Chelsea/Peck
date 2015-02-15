@@ -32,8 +32,56 @@ a:hover, a:active {
   color: #FF5722;
   text-decoration: underline; }
 
+.d1 {
+  position: relative;
+  height: 200px;
+  width: 200px;
+  background: red;
+  z-index: 1; }
+
+.d2 {
+  position: absolute;
+  top: 150px;
+  left: 50px;
+  height: 150px;
+  width: 300px;
+  background: yellow;
+  z-index: 2; }
+
 div.page {
-  position: relative; }
+  position: relative;
+  z-index: 2; }
+
+div.clouds {
+  position: absolute;
+  z-index: 1;
+  background: #00BCD4; }
+
+.cloud {
+  position: absolute;
+  width: 200px;
+  z-index: 1;
+  opacity: 0.7; }
+
+#cloud1 {
+  top: -240px;
+  left: 0px; }
+
+#cloud2 {
+  top: -190px;
+  left: 150px; }
+
+#cloud3 {
+  top: -120px;
+  left: 100px; }
+
+#cloud4 {
+  top: -90px;
+  left: 500px; }
+
+#cloud5 {
+  top: 0px;
+  left: 640px; }
 
 h1.title {
   margin-top: 50px;

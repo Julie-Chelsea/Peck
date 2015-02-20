@@ -24,4 +24,4 @@
 # Ignore database secrets
 /config/database.yml
 /Gemfile
-/vendor/.bundle
+/vendor/bundle

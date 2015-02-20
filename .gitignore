@@ -5,23 +5,23 @@
 #   git config --global core.excludesfile '~/.gitignore_global'
 
 # Ignore bundler config.
-/.bundle
+# /.bundle
 
-# Ignore the default SQLite database.
-/db/*.sqlite3
-/db/*.sqlite3-journal
+# # Ignore the default SQLite database.
+# /db/*.sqlite3
+# /db/*.sqlite3-journal
 
-# Ignore all logfiles and tempfiles.
-/log/*.log
-/tmp
+# # Ignore all logfiles and tempfiles.
+# /log/*.log
+# /tmp
 
-# Ignore Spring files
-/spring/*.pid
+# # Ignore Spring files
+# /spring/*.pid
 
-# Ignore db:seed
-/db/seeds.rb
+# # Ignore db:seed
+# /db/seeds.rb
 
-# Ignore database secrets
-/config/database.yml
-/Gemfile
-/vendor/bundle
+# # Ignore database secrets
+# /config/database.yml
+# /Gemfile
+# /vendor/bundle

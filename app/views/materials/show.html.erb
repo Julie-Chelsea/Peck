@@ -1,9 +1,0 @@
-<!-- Test page to see if can access lessons_lesson -->
-<%= provide(:title, @material.title) %>
-<h1>Lesson Title</h1>
-<%= @material.title %>
-<%= @words.find_each do |word| %>
-
-<%= word.word if @material.id == word.lesson_id%>
-
-<% end %>

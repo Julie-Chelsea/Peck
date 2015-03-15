@@ -1,0 +1,8 @@
+<!-- Test page to see if can access lessons_lesson -->
+<%= provide(:title, @lesson.title) %>
+<h1>Lesson: <%= @lesson.title %></h1>
+<%= @words.find_each do |w| %>
+<%= w.word%>
+<% end %>
+
+

@@ -4,4 +4,5 @@ class Slide < ActiveRecord::Base
 	self.table_name = "lessons_slide"
 
 	belongs_to :lessons
+
 end

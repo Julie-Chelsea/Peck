@@ -5,4 +5,5 @@ class Lesson < ActiveRecord::Base
 
 	has_many :slides
 	has_many :words
+
 end

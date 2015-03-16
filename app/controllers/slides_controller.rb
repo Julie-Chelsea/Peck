@@ -4,7 +4,7 @@ class SlidesController < ApplicationController
 	end
 
 	def show
-		@slide = Slide.find(params[:lesson_id])
+		@slide = Slide.find(params[:id])
 	end
 
 end

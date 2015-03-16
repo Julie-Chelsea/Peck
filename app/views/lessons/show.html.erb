@@ -5,4 +5,7 @@
 <%= w.word%>
 <% end %>
 
+<%= @slides.find_each do |slide| %>
+<li>page: <%= link_to slide.id ,lesson_slide_path(@lesson.id, slide.id) %></li>
+<% end %>
 

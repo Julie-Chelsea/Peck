@@ -7,26 +7,6 @@
 @import 'header';
 @import 'footer';
 
-div.signup1{
-	background: $lightgreen600;
-}
-
-div.login1{
-	background: $indigo600;
-}
-
-.labels{
-	display: inline-block;
-	text-align: left;
-	margin-right: 15px;
-	margin-left: 50px;
-}
-
-.fields{
-	display: inline-block;
-	text-align: left;
-}
-
 .container #signup{
 	width: 500px;
 }

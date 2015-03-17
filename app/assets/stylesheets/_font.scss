@@ -89,15 +89,6 @@ b{
 	text-transform: uppercase;
 }
 
-input.checkbox{
-	left: 50px;
-}
-
-p.checkbox{
-	margin-left: -10px;
-	display: inline;
-}
-
 a{
 	@extend .font;
 }

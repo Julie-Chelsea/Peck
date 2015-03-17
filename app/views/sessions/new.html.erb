@@ -1,25 +1,36 @@
 <% provide(:title, "Log in") %>
-<h1>Log in</h1>
 
-<div class="row">
-	<div class="col-md-6 col-md-offset-3">
+<div class="login3 container">
+	<div class="title indigo500">
+		<h1>Log in</h1>
+	</div>
+	<div class="section">
 		<%= form_for(:session, url: login_path) do |f| %>
 
-		<%= f.label :username %>
-		<%= f.text_field :username, class: 'form-control' %>
+		<br><br><center>
+		<span class="labels">
+			<b><%= f.label :username %></b><br><br>
+			<b><%= f.label :password %></b><br>
+			<%= link_to "Forgot password?", new_password_reset_path, class: "forgotit" %>
+		</span>
 
-		<%= f.label :password %>
-		<%= link_to "(forgot password)", new_password_reset_path %>
-		<%= f.password_field :password, class: 'form-control' %>
+		<span class="fields">
+			<%= f.text_field :username, class: '' %><br><br>
+			<%= f.password_field :password, class: '' %><br><br>
+		</span>
+		<br><br>
 
-		<%= f.label :remember_me, class: "checkbox inline" do %>
-		<%= f.check_box :remember_me %>
-		<span>Remember me on this computer</span>
+		<span class="remember">
+			<%= f.label :remember_me do %>
+			<%= f.check_box :remember_me %>
+			<p class="checkbox">Remember me</p>
+			<% end %>
+		</span>
+		<br><br>
+		<%= f.submit "Log in", class: "button no", id: 'login1' %>
 		<% end %>
 
-		<%= f.submit "Log in", class: "btn btn-promary" %>
-		<% end %>
-
-		<p><%= link_to "New user?", signup_path %></p>
+		</center>
+		
 	</div>
 </div>

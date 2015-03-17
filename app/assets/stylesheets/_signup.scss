@@ -1,0 +1,58 @@
+@import 'colors';
+
+/*Form labels & fields*/
+.labels{
+	display: inline-block;
+	text-align: left;
+	margin-right: 15px;
+}
+
+.fields{
+	display: inline-block;
+	text-align: left;
+	vertical-align: top;
+}
+
+
+/*Login page*/
+.forgotit{
+	font-size: 0.7em;
+}
+
+.forgotit:link, .forgotit:visited{
+	color: $indigo700;
+}
+
+.remember{
+	position: relative;
+	text-align: left;
+	display: inline-block;
+	margin-left: -150px;
+}
+
+	/*Form login button*/
+	#login1{
+		background: $indigo900;
+		color: white;
+	}
+
+	#login1:hover{
+		background: $indigo800;
+	}
+
+	/*'Remember me' next to checkbox*/
+	p.checkbox{
+		margin-left: -10px;
+		display: inline;
+		font-size: 0.8em;
+		color: $grey800;
+	}
+
+
+/*Sign up page*/
+
+	/*Form signup button*/
+	#signup1{
+		background: $lightgreen900;
+		color: white;
+	}

@@ -1,47 +1,54 @@
 <%= provide(:title, 'Sign up | Peck') %>
 
 <div class="container" id="signup">
-	<div class="heading lightgreen500">
-		<h1>Sign uped</h1>
+	<div class="title lightgreen500">
+		<h1>Sign up</h1>
 	</div>
 	<div class="section">
+		<%= form_for(@user) do |f| %>
+		<%= render 'shared/error_messages' %>
 		<p>
 			Provide your details to unlock your learning experience. Your information won't be shared with anyone.
 			<br>
 		</p>
 		<span class="labels">
-			<b>Name:</b><br><br>
-			<b>Email:</b><br><br>
-			<b>Username:</b><br><br>
-			<b>Password:</b><br><br>
+			<b><%= f.label :name %></b><br><br>
+			<b><%= f.label :email %></b><br><br>
+			<b><%= f.label :username %></b><br><br>
+			<b><%= f.label :password %></b><br><br>
+			<b><%= f.label :password_confirmation %>:</b>		
+
 		</span>
 		<span class="fields">
-			<input><br><br>
-			<input><br><br>
-			<input><br><br>
-			<input><br><br>
+			<%= f.text_field :name, class: 'form-control' %><br><br>
+			<%= f.text_field :email, class: 'form-control' %><br><br>
+			<%= f.text_field :username, class: 'form-control' %><br><br>
+			<%= f.password_field :password, class: 'form-control' %><br><br>
+			<%= f.password_field :password_confirmation, class: 'form-control' %>
 		</span><br><br>
-		<button id="submit">Start learning Korean</button>
+
+		<%= f.submit "Start learning Korean", id: 'submit' %>
+		<% end %>
 	</div>
 </div>
 
-<%= form_for(@user) do |f| %>
-<%= render 'shared/error_messages' %>
+# <%= form_for(@user) do |f| %>
+# <%= render 'shared/error_messages' %>
 
-<%= f.label :name %>
-<%= f.text_field :name, class: 'form-control' %>
+# <%= f.label :name %>
+# <%= f.text_field :name, class: 'form-control' %>
 
-<%= f.label :email %>
-<%= f.text_field :email, class: 'form-control' %>
+# <%= f.label :email %>
+# <%= f.text_field :email, class: 'form-control' %>
 
-<%= f.label :username %>
-<%= f.text_field :username, class: 'form-control' %>
+# <%= f.label :username %>
+# <%= f.text_field :username, class: 'form-control' %>
 
-<%= f.label :password %>
-<%= f.password_field :password, class: 'form-control' %>
+# <%= f.label :password %>
+# <%= f.password_field :password, class: 'form-control' %>
 
-<%= f.label :password_confirmation %>
-<%= f.password_field :password_confirmation, class: 'form-control' %>
+# <%= f.label :password_confirmation %>
+# <%= f.password_field :password_confirmation, class: 'form-control' %>
 
-<%= f.submit "Start learning Korean", class: "" %>
-<% end %>
+# <%= f.submit "Start learning Korean", class: "" %>
+# <% end %>

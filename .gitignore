@@ -12,7 +12,7 @@
 /db/*.sqlite3-journal
 
 # Ignore all logfiles and tempfiles.
-/log/*.log
+/log
 /tmp
 
 # # Ignore Spring files
@@ -23,5 +23,9 @@
 
 # Ignore database secrets
 /config/database.yml
-/Gemfile
+Gemfile
 /vendor/bundle
+/vendor/assets
+
+
+/bin

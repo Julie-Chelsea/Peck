@@ -23,10 +23,5 @@
 
 # Ignore database secrets
 /config/database.yml
-Gemfile
-Gemfile.lock
 /vendor/bundle
 /vendor/assets
-/config/secrets.yml
-
-/bin

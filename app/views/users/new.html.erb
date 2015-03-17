@@ -1,28 +1,39 @@
 <%= provide(:title, 'Sign up | Peck') %>
-<div class="signupHolder">
-	<h1 class="signUp">Sign up</h1>
+<div class="container" id="signup2">
+	<div class="title lightgreen500">
+		<h1>Sign up</h1>
+	</div>
+	<div class="section">
 	<div class="row">
-		<div class="col-md-6 col-md-offset-3">
-			<%= form_for(@user) do |f| %>
-			<%= render 'shared/error_messages' %>
+		<%= form_for(@user) do |f| %>
+		<%= render 'shared/error_messages' %>
 
-			<%= f.label :name %>
-			<%= f.text_field :name, class: 'form-control' %>
+		<br><br><center>
 
-			<%= f.label :email %>
-			<%= f.text_field :email, class: 'form-control' %>
+		<span class="labels">
+			<b><%= f.label :name %></b><br><br>
+			<b><%= f.label :email %></b><br><br>
+			<b><%= f.label :username %></b><br><br>
+			<b><%= f.label :password %></b><br><br>
+			<b><%= f.label :password_confirmation %></b><br><br>
+		</span>
 
-			<%= f.label :username %>
-			<%= f.text_field :username, class: 'form-control' %>
+		<span class="fields">
+			<%= f.text_field :name, class: 'form-control' %><br><br>
+			<%= f.text_field :email, class: 'form-control' %><br><br>
+			<%= f.text_field :username, class: 'form-control' %><br><br>
+			<%= f.password_field :password, class: 'form-control' %><br><br>
+			<%= f.password_field :password_confirmation, class: 'form-control' %><br><br>
+		</span><br>
 
-			<%= f.label :password %>
-			<%= f.password_field :password, class: 'form-control' %>
+		<span class="remember">
+			<p class="description">
+				Your information won't be shared with anyone.
+			</p>
+		</span><br><br>
 
-			<%= f.label :password_confirmation %>
-			<%= f.password_field :password_confirmation, class: 'form-control' %>
-
-			<%= f.submit "Create my account", class: "btn btn-primary" %>
-			<% end %>
-		</div>
+		<%= f.submit "Start learning", class: "button no", id: 'signup1' %>
+		<% end %>
+		</center>
 	</div>
 </div>

@@ -4187,7 +4187,7 @@ h5.subtitle {
 .redA200 { background-color: #;}
 .redA400 { background-color: #;}
 .redA700 { background-color: #;}*/
-/*Form labels & fields*/
+/*Inline form labels (on left) & fields (on right)*/
 .labels {
   display: inline-block;
   text-align: left;
@@ -4199,12 +4199,18 @@ h5.subtitle {
   vertical-align: top; }
 
 /*Login page*/
+/*Make the login container smaller than usual, to make it more visually appealing*/
+#loginbox {
+  width: 300px; }
+
+/*Forgot password styling*/
 .forgotit {
   font-size: 0.7em; }
 
 .forgotit:link, .forgotit:visited {
   color: #303F9F; }
 
+/*Position the remember me elements to the left*/
 .remember {
   position: relative;
   text-align: left;
@@ -4229,8 +4235,19 @@ p.checkbox {
 /*Sign up page*/
 /*Form signup button*/
 #signup1 {
-  background: #33691E;
+  background: #558B2F;
   color: white; }
+
+#signup2 {
+  width: 500px; }
+
+/*User reassurance/descriptions*/
+.description {
+  display: block;
+  font-size: 0.8em;
+  font-style: italic;
+  color: #757575;
+  padding: 0; }
 
 /*Background colors for each of the color swatches*/
 .red50 {
@@ -7671,13 +7688,6 @@ h1.toolbar {
 #logout {
   background: #424242;
   color: #757575; }
-
-.container #signup {
-  width: 500px; }
-
-.login3 {
-  max-width: 300px;
-  width: 300px; }
 
 h2.lessontitle {
   font-size: 3em;

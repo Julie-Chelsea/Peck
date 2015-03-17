@@ -1,6 +1,6 @@
 @import 'colors';
 
-/*Form labels & fields*/
+/*Inline form labels (on left) & fields (on right)*/
 .labels{
 	display: inline-block;
 	text-align: left;
@@ -13,22 +13,28 @@
 	vertical-align: top;
 }
 
-
 /*Login page*/
-.forgotit{
-	font-size: 0.7em;
-}
+	/*Make the login container smaller than usual, to make it more visually appealing*/
+	#loginbox{
+		width: 300px;
+	}
 
-.forgotit:link, .forgotit:visited{
-	color: $indigo700;
-}
+	/*Forgot password styling*/
+	.forgotit{
+		font-size: 0.7em;
+	}
 
-.remember{
-	position: relative;
-	text-align: left;
-	display: inline-block;
-	margin-left: -150px;
-}
+	.forgotit:link, .forgotit:visited{
+		color: $indigo700;
+	}
+
+	/*Position the remember me elements to the left*/
+	.remember{
+		position: relative;
+		text-align: left;
+		display: inline-block;
+		margin-left: -150px;
+	}
 
 	/*Form login button*/
 	#login1{
@@ -48,11 +54,23 @@
 		color: $grey800;
 	}
 
-
 /*Sign up page*/
-
 	/*Form signup button*/
 	#signup1{
-		background: $lightgreen900;
+		background: $lightgreen800;
 		color: white;
+	}
+
+	#signup2{
+		width: 500px;
+	}
+
+	/*User reassurance/descriptions*/
+
+	.description{
+		display: block;
+		font-size: 0.8em;
+		font-style: italic;
+		color: $grey600;
+		padding: 0;
 	}

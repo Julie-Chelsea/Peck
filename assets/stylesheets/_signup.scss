@@ -1,17 +1,2 @@
 @import 'colors';
 @import 'text';
-
-
-div.signupHolder{
-	position: relative;
-	width: 100%;
-}
-
-h1.signUp{
-	@extend .font;
-	position: relative;
-	font-family: 'Roboto', sans-serif;
-	font-size: 3em;
-	color: black;
-	left: -165px;
-}

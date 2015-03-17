@@ -46,15 +46,10 @@ div.title{
 	width: 100%;
 }
 
-div.heading{
-	@extend .remove;
-	width: 100%;
-}
-
 #subtitle{
 	padding-bottom: 250px;
 }
 
 div.section{
-	@extend div.heading;
+	@extend div.title;
 }

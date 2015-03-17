@@ -23,5 +23,14 @@
 
 # Ignore database secrets
 /config/database.yml
+<<<<<<< HEAD
 /vendor/bundle
 /vendor/assets
+=======
+Gemfile
+/vendor/bundle
+/vendor/assets
+
+
+/bin
+>>>>>>> 944668aafec41abb8ea1be2b4e52fb86454e7ca0

@@ -1,0 +1,59 @@
+@import 'colors';
+
+.font{
+	font-family: 'Roboto', sans-serif;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+//Standard text styles
+
+h1{
+	@extend .font;
+	font-family: 'Roboto', sans-serif;
+	font-size: 3em;
+	color: black;
+}
+
+h2{
+	@extend .font;
+	font-size: 2.5em;
+	color: $grey900;
+}
+
+h3{
+	@extend .font;
+	font-size: 2em;
+	color: $indigo800;
+}
+
+p{
+	@extend .font;
+	font-size: 0.9em;
+	margin-bottom: 15px;
+	line-height: 200%;
+}
+
+::selection{
+	background: $lightblue200;
+}
+
+a:link, a:visited{
+	color: $lightblue700;
+	text-decoration: none;
+}
+
+a:hover, a:active{
+	color: $lightblue900;
+	text-decoration: underline;
+}
+
+a.no:link, a.no:visited{
+	color: inherit;
+	text-decoration: none;
+}
+
+a.no:hover, a.no:active{
+	color: inherit;
+	text-decoration: none;
+}

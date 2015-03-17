@@ -1,0 +1,60 @@
+@import 'colors';
+
+.remove{
+	position: relative;
+	top: 0;
+	left: 0;
+	margin: 0;
+}
+
+body{
+	@extend .remove;
+	height: 100%;
+	width: 100%;
+	background: $grey50;
+	padding-top: 50px;
+	padding-bottom: 100px;
+	z-index: 1;
+}
+
+div.container{
+	@extend .remove;
+	max-width: 1000px;
+	width: 95%;
+	min-width: 600px;
+	background-color: $white;
+	z-index: 2;
+	margin-top: 50px;
+	padding-bottom: 50px;
+	text-align: left;
+	box-shadow: 0 0 6px 1px rgba(0,0,0,0.18);
+}
+
+div.standalone{
+	@extend div.container;
+	padding-bottom: 0;
+}
+
+div.holder{
+	@extend div.standalone;
+	box-shadow: none;
+	background-color: transparent;
+}
+
+div.title{
+	@extend .remove;
+	width: 100%;
+}
+
+div.heading{
+	@extend .remove;
+	width: 100%;
+}
+
+#subtitle{
+	padding-bottom: 250px;
+}
+
+div.section{
+	@extend div.heading;
+}

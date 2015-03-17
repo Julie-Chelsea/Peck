@@ -1,0 +1,95 @@
+@import 'colors';
+@import 'page';
+@import 'font';
+
+/*The black bar at the top of the page*/
+div.toolbar{
+	@extend .remove;
+	position: fixed;
+	display: block;
+	width: 100%;
+	height: 50px;
+	background-color: $grey900;
+	z-index: 5;
+	box-shadow: 0 0 6px 2px rgba(0,0,0,0.25);
+}
+
+/*The thing that holds the items in the black bar*/
+div.toolbarContents{
+	@extend .remove;
+	margin-top: 7.5px;
+	padding-right: 20px;
+	left: 10px;
+	vertical-align: middle;
+}
+
+/*Site title in toolbar*/
+h1.toolbar{
+	@extend h1;
+	display: inline-block;
+	color: $white;
+	font-size: 1.75em;
+	text-transform: uppercase;
+	padding: 0;
+	margin-left: 10px;
+}
+
+/*Style links to look like buttons*/
+.button{
+	@extend .text;
+	@extend .remove;
+	font-size: 1em;
+	font-weight: 500;
+	text-transform: uppercase;
+	padding: 10px;
+	border: none;
+	background-color: $lightgreen500;
+	color: white;
+	box-shadow: 0 0 4px 1px rgba(0,0,0,0.25);
+}
+
+/*Center the elements in the bar (eg. buttons)*/
+.tools{
+	@extend .remove;
+	float: right;
+	margin-right: 7px;
+	padding: 7px;
+	font-size: 1em;
+}
+
+/*Login buttons*/
+	/*Default appearance*/
+	#login{
+		background-color: $indigo500;
+		color: white;
+	}
+
+	/*On the signup page*/
+	#login2{
+		background: $lightgreen900;
+		color: white;
+	}
+
+/*Signup buttons*/
+	/*Default appearance*/
+	#signup{
+		background-color: $lightgreen500;
+		color: white;
+	}
+
+	/*On the login page*/
+	#signup2{
+		background: $indigo900;
+		color: white;
+	}
+
+/*Profile button*/
+.profile{
+	background: $cyan500;
+}
+
+/*Logout button*/
+#logout{
+	background: $grey800;
+	color: $grey600;
+}

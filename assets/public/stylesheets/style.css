@@ -1,0 +1,15 @@
+.font {
+  font-family: 'Roboto'; }
+
+::selection {
+  background: #EEEEEE; }
+
+a:link, a:visited {
+  color: #FFC107;
+  text-decoration: none; }
+
+a:hover, a:active {
+  color: #FF5722;
+  text-decoration: underline; }
+
+/*# sourceMappingURL=style.css.map */

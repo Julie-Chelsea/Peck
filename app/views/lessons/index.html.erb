@@ -16,7 +16,7 @@
 	<%= @lessons .find_each do |l| %>
 		<div class="lesson">
 			<div class="lessonimage">
-				<h1 class="lessonnumber"><%= l.number %></h1>
+				<h1 class="lessonnumber"><%= link_to l.number, l, class: 'no' %></h1>
 			</div>
 			<div class="lessontitle">
 				<p class="lessontitle">

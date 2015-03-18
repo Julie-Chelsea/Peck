@@ -1,5 +1,16 @@
-@import 'colors';
-@import 'page';
+/*Add colors used in this file rather than importing every single one*/
+	$lightgreen500: #8BC34A;
+	$cyan500: #00BCD4;
+	$grey50: #FAFAFA;
+	$grey100: #F5F5F5;
+	$grey200: #EEEEEE;
+	$grey300: #E0E0E0;
+	$grey400: #BDBDBD;
+	$grey500: #9E9E9E;
+	$grey600: #757575;
+	$grey700: #616161;
+	$grey800: #424242;
+	$grey900: #212121;
 
 .font{
 	font-family: 'Roboto', 'Noto Sans', sans-serif;
@@ -71,7 +82,6 @@ p{
 
 button{
 	@extend .text;
-	@extend .remove;
 	font-size: 1em;
 	font-weight: 500;
 	text-transform: uppercase;

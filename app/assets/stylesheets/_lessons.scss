@@ -1,5 +1,7 @@
-@import 'colors';
-@import 'page';
+/*Add colors used in this file rather than importing every single one*/
+	$grey500: #9E9E9E;
+	$grey700: #616161;
+	$blue500: #2196F3;
 
 /*Korean language page*/
 #koreanpage{
@@ -10,7 +12,6 @@
 /*Header in Korean: 한국어*/
 h2.language1{
 	padding: 0;
-	margin: 0;
 	margin-left: -5px;
 	display: inline;
 	font-weight: 400;
@@ -20,15 +21,12 @@ h2.language1{
 /*Header in English: Korean*/
 h2.language2{
 	padding: 0;
-	margin: 0;
 	display: inline;
 	color: $grey500;
 }
 
 /*Holds resume button & view all stats*/
 div.resume{
-	padding: 0;
-	margin: 0;
 	margin-top: 25px;
 	display: inline-block;
 	float: right;
@@ -39,7 +37,6 @@ button.resume{
 }
 
 div.lesson{
-	@extend .remove;
 	display: inline-block;
 	width: 250px;
 }
@@ -57,7 +54,7 @@ div.lessonimage{
 
 .lessonnumber{
 	font-size: 5em;
-	color: $white;
+	color: white;
 	padding: 0;
 	margin-top: 20px;
 	opacity: 0.2;
@@ -65,11 +62,8 @@ div.lessonimage{
 
 /*Bottom part of lesson div*/
 div.lessontitle{
-	@extend .remove;
 	display: block;
 	width: 250px;
-	margin: 0;
-	padding: 0;
 }
 
 p.lessontitle{

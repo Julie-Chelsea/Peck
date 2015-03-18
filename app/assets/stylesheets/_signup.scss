@@ -1,4 +1,10 @@
-@import 'colors';
+/*Add colors used in this file rather than importing every single one*/
+	$indigo700: #303F9F;
+	$indigo800: #283593;
+	$indigo900: #1A237E;
+	$lightgreen800: #558B2F;
+	$grey600: #757575;
+	$grey800: #424242;
 
 /*Inline form labels (on left) & fields (on right)*/
 .labels{

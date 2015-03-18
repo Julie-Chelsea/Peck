@@ -1,4 +1,5 @@
-@import 'colors';
+/*Add colors used in this file rather than importing every single one*/
+	$grey50: #FAFAFA;
 
 .remove{
 	position: relative;
@@ -22,7 +23,7 @@ div.container{
 	max-width: 1000px;
 	width: 95%;
 	min-width: 600px;
-	background-color: $white;
+	background-color: white;
 	z-index: 2;
 	margin-top: 50px;
 	padding-bottom: 50px;

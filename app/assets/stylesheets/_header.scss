@@ -1,6 +1,12 @@
-@import 'colors';
 @import 'page';
 @import 'font';
+
+/*Add colors used in this file rather than importing every single one*/
+	$indigo500: #3F51B5;
+	$cyan500: #00BCD4;
+	$lightgreen500: #8BC34A;
+	$grey800: #424242;
+	$grey900: #212121;
 
 /*The black bar at the top of the page*/
 div.toolbar{
@@ -25,9 +31,8 @@ div.toolbarContents{
 
 /*Site title in toolbar*/
 h1.toolbar{
-	@extend h1;
 	display: inline-block;
-	color: $white;
+	color: white;
 	font-size: 1.75em;
 	text-transform: uppercase;
 	padding: 0;

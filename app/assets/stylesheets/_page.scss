@@ -1,5 +1,4 @@
-/*Add colors used in this file rather than importing every single one*/
-	$grey50: #FAFAFA;
+@import 'colors';
 
 .remove{
 	position: relative;
@@ -16,6 +15,28 @@ body{
 	padding-top: 50px;
 	padding-bottom: 100px;
 	z-index: 1;
+}
+
+/*The black bar at the top of the page*/
+div.toolbar{
+	padding: 0;
+	margin: 0;
+	position: fixed;
+	display: block;
+	width: 100%;
+	height: 50px;
+	background-color: $grey900;
+	z-index: 5;
+	box-shadow: 0 0 6px 2px rgba(0,0,0,0.25);
+}
+
+/*The thing that holds the items in the black bar*/
+div.toolbarContents{
+	@extend .remove;
+	margin-top: 7.5px;
+	padding-right: 20px;
+	left: 10px;
+	vertical-align: middle;
 }
 
 div.container{

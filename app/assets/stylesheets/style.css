@@ -378,48 +378,6 @@
 .cyanA700 {
   background-color: #00b8d4; }
 
-.teal50 {
-  background-color: #e0f2f1; }
-
-.teal100 {
-  background-color: #b2dfdb; }
-
-.teal200 {
-  background-color: #80cbc4; }
-
-.teal300 {
-  background-color: #4db6ac; }
-
-.teal400 {
-  background-color: #26a69a; }
-
-.teal500 {
-  background-color: #009688; }
-
-.teal600 {
-  background-color: #00897b; }
-
-.teal700 {
-  background-color: #00796b; }
-
-.teal800 {
-  background-color: #00695c; }
-
-.teal900 {
-  background-color: #004d40; }
-
-.tealA100 {
-  background-color: #a7ffeb; }
-
-.tealA200 {
-  background-color: #64ffda; }
-
-.tealA400 {
-  background-color: #1de9b6; }
-
-.tealA700 {
-  background-color: #00bfa5; }
-
 .lightgreen50 {
   background-color: #f1f8e9; }
 
@@ -461,48 +419,6 @@
 
 .lightgreenA700 {
   background-color: #64dd17; }
-
-.lime50 {
-  background-color: #f9fbe7; }
-
-.lime100 {
-  background-color: #f0f4c3; }
-
-.lime200 {
-  background-color: #e6ee9c; }
-
-.lime300 {
-  background-color: #dce775; }
-
-.lime400 {
-  background-color: #d4e157; }
-
-.lime500 {
-  background-color: #cddc39; }
-
-.lime600 {
-  background-color: #c0ca33; }
-
-.lime700 {
-  background-color: #afb42b; }
-
-.lime800 {
-  background-color: #9e9d24; }
-
-.lime900 {
-  background-color: #827717; }
-
-.limeA100 {
-  background-color: #f4ff81; }
-
-.limeA200 {
-  background-color: #eeff41; }
-
-.limeA400 {
-  background-color: #c6ff00; }
-
-.limeA700 {
-  background-color: #aeea00; }
 
 .yellow50 {
   background-color: #fffde7; }
@@ -789,23 +705,8 @@
 .beige500 {
   background-color: #e5d8cf; }
 
-/*Template*/
-/*.red50 { background-color: #;}
-.red100 { background-color: #;}
-.red200 { background-color: #;}
-.red300 { background-color: #;}
-.red400 { background-color: #;}
-.red500 { background-color: #;}
-.red600 { background-color: #;}
-.red700 { background-color: #;}
-.red800 { background-color: #;}
-.red900 { background-color: #;}
-.redA100 { background-color: #;}
-.redA200 { background-color: #;}
-.redA400 { background-color: #;}
-.redA700 { background-color: #;}*/
 /*Add colors used in this file rather than importing every single one*/
-.font, .header, h1, h2, h3, h4, h5, h6, .text, p, button, b, .button, a {
+.font, .header, h1, h2, h3, h4, h5, h6, .text, p, button, .button, b, a {
   font-family: 'Roboto', 'Noto Sans', sans-serif;
   text-align: left;
   margin-top: 0;
@@ -817,7 +718,7 @@
   color: white;
   font-weight: 400; }
 
-.text, p, button, b, .button {
+.text, p, button, .button, b {
   font-weight: 400; }
 
 body {
@@ -863,6 +764,17 @@ button {
   color: white;
   box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.25); }
 
+/*Style links to look like buttons*/
+.button {
+  font-size: 1em;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 10px;
+  border: none;
+  background-color: #8BC34A;
+  color: white;
+  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.25); }
+
 /*Special text*/
 b {
   font-weight: 500;
@@ -892,8 +804,7 @@ a.grey:link, a.grey:visited {
 a.grey:hover, a.grey:active {
   text-decoration: underline; }
 
-/*Add colors used in this file rather than importing every single one*/
-.remove, body, div.container, div.standalone, div.holder, div.slide, div.title, div.section, div.toolbar, div.toolbarContents, .button, .tools, div.word, div.info, div.togglewords, span.togglewords, span.circle, p.remainder {
+.remove, body, div.toolbarContents, div.container, div.standalone, div.holder, div.slide, div.title, div.section, div.word, div.info, div.toolbar, .button, .tools, div.togglewords, span.togglewords, span.circle, p.remainder {
   position: relative;
   top: 0;
   left: 0;
@@ -906,6 +817,25 @@ body {
   padding-top: 50px;
   padding-bottom: 100px;
   z-index: 1; }
+
+/*The black bar at the top of the page*/
+div.toolbar {
+  padding: 0;
+  margin: 0;
+  position: fixed;
+  display: block;
+  width: 100%;
+  height: 50px;
+  background-color: #212121;
+  z-index: 5;
+  box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.25); }
+
+/*The thing that holds the items in the black bar*/
+div.toolbarContents {
+  margin-top: 7.5px;
+  padding-right: 20px;
+  left: 10px;
+  vertical-align: middle; }
 
 div.container, div.standalone, div.holder, div.slide {
   max-width: 1000px;
@@ -940,7 +870,63 @@ h5.subtitle {
   color: white;
   font-size: 2em; }
 
-/*Add colors used in this file rather than importing every single one*/
+.remove, body, div.toolbarContents, div.container, div.standalone, div.holder, div.slide, div.title, div.section, div.word, div.info, div.toolbar, .button, .tools, div.togglewords, span.togglewords, span.circle, p.remainder {
+  position: relative;
+  top: 0;
+  left: 0;
+  margin: 0; }
+
+body {
+  height: 100%;
+  width: 100%;
+  background: #FAFAFA;
+  padding-top: 50px;
+  padding-bottom: 100px;
+  z-index: 1; }
+
+/*The black bar at the top of the page*/
+div.toolbar {
+  padding: 0;
+  margin: 0;
+  position: fixed;
+  display: block;
+  width: 100%;
+  height: 50px;
+  background-color: #212121;
+  z-index: 5;
+  box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.25); }
+
+/*The thing that holds the items in the black bar*/
+div.toolbarContents {
+  margin-top: 7.5px;
+  padding-right: 20px;
+  left: 10px;
+  vertical-align: middle; }
+
+div.container, div.standalone, div.holder, div.slide {
+  max-width: 1000px;
+  width: 95%;
+  min-width: 600px;
+  background-color: white;
+  z-index: 2;
+  margin-top: 50px;
+  padding-bottom: 50px;
+  text-align: left;
+  box-shadow: 0 0 6px 1px rgba(0, 0, 0, 0.18); }
+
+div.standalone, div.holder, div.slide {
+  padding-bottom: 0; }
+
+div.holder {
+  box-shadow: none;
+  background-color: transparent; }
+
+div.title, div.section {
+  width: 100%; }
+
+#subtitle {
+  padding-bottom: 250px; }
+
 /*Korean language page*/
 #koreanpage {
   margin-top: 25px;
@@ -1005,6 +991,125 @@ p.lessontitle {
   font-weight: 500; }
 
 /*Create invisible placeholder lessons, when lessons aren't a length of a multiple of 3, just to make layout look better*/
+/*Word list*/
+h2.lessontitle {
+  font-size: 3em;
+  font-weight: 700;
+  color: #757575;
+  padding-bottom: 0;
+  padding-left: 0; }
+
+button.wordlist {
+  margin-right: 5px; }
+
+#viewlesson {
+  background-color: #FF9800; }
+
+#entertainment {
+  background-color: #2196F3; }
+
+#quiz {
+  background-color: #8BC34A; }
+
+/*Word list stuff*/
+#wordlist {
+  background-color: #FAFAFA;
+  position: relative;
+  padding: 0;
+  max-width: 1000px;
+  width: 95%;
+  min-width: 600px; }
+
+div.word {
+  width: 100%;
+  height: 100px;
+  border-top: solid 1px #E0E0E0;
+  border-bottom: solid 2px #FFFFFF; }
+
+div.wordnumber {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background-color: #F5F5F5; }
+
+h1.wordnumber {
+  margin-top: 10px;
+  font-size: 4em;
+  color: #BDBDBD;
+  padding: 0; }
+
+img.wordimage {
+  display: inline-block;
+  position: relative;
+  margin-top: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
+  vertical-align: top;
+  width: 100px; }
+
+div.info {
+  display: inline-block; }
+
+h3.korean {
+  font-family: 'Noto Sans', sans-serif;
+  color: #212121;
+  font-size: 1.5em;
+  margin-left: -1px;
+  margin-right: 7px;
+  display: inline;
+  padding: 0; }
+
+h3.romanization {
+  color: #BDBDBD;
+  font-size: 1em;
+  display: inline;
+  padding: 0; }
+
+h3.definition {
+  color: #424242;
+  font-size: 1.2em;
+  padding: 0; }
+
+div.progress {
+  height: 100px;
+  display: inline-block;
+  float: right;
+  padding-left: 22px;
+  padding-right: 22px; }
+
+p.progress {
+  color: #616161;
+  font-size: 0.8em;
+  text-align: center;
+  line-height: 100%;
+  padding: 0;
+  padding-top: 32px; }
+
+p.progressnumber {
+  color: #BDBDBD;
+  text-align: center;
+  line-height: 100%;
+  padding: 0;
+  font-weight: 600; }
+
+div.moreinfo {
+  display: inline-block;
+  background: #E0E0E0;
+  width: 75px;
+  height: 75px;
+  border-radius: 50px;
+  float: right;
+  margin-top: 15px;
+  margin-right: 20px; }
+
+p.moreinfo {
+  color: #424242;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 0;
+  font-size: 0.7em;
+  margin-top: 15px; }
+
 /*Add colors used in this file rather than importing every single one*/
 /*Inline form labels (on left) & fields (on right)*/
 .labels {
@@ -1068,8 +1173,7 @@ p.checkbox {
   color: #757575;
   padding: 0; }
 
-/*Add colors used in this file rather than importing every single one*/
-.remove, body, div.container, div.standalone, div.holder, div.slide, div.title, div.section, div.toolbar, div.toolbarContents, .button, .tools, div.word, div.info, div.togglewords, span.togglewords, span.circle, p.remainder {
+.remove, body, div.toolbarContents, div.container, div.standalone, div.holder, div.slide, div.title, div.section, div.word, div.info, div.toolbar, .button, .tools, div.togglewords, span.togglewords, span.circle, p.remainder {
   position: relative;
   top: 0;
   left: 0;
@@ -1082,6 +1186,25 @@ body {
   padding-top: 50px;
   padding-bottom: 100px;
   z-index: 1; }
+
+/*The black bar at the top of the page*/
+div.toolbar {
+  padding: 0;
+  margin: 0;
+  position: fixed;
+  display: block;
+  width: 100%;
+  height: 50px;
+  background-color: #212121;
+  z-index: 5;
+  box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.25); }
+
+/*The thing that holds the items in the black bar*/
+div.toolbarContents {
+  margin-top: 7.5px;
+  padding-right: 20px;
+  left: 10px;
+  vertical-align: middle; }
 
 div.container, div.standalone, div.holder, div.slide {
   max-width: 1000px;
@@ -1108,7 +1231,7 @@ div.title, div.section {
   padding-bottom: 250px; }
 
 /*Add colors used in this file rather than importing every single one*/
-.font, .header, h1, h2, h3, h4, h5, h6, .text, p, button, b, .button, a {
+.font, .header, h1, h2, h3, h4, h5, h6, .text, p, button, .button, b, a {
   font-family: 'Roboto', 'Noto Sans', sans-serif;
   text-align: left;
   margin-top: 0;
@@ -1120,7 +1243,7 @@ div.title, div.section {
   color: white;
   font-weight: 400; }
 
-.text, p, button, b, .button {
+.text, p, button, .button, b {
   font-weight: 400; }
 
 body {
@@ -1166,6 +1289,17 @@ button {
   color: white;
   box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.25); }
 
+/*Style links to look like buttons*/
+.button {
+  font-size: 1em;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 10px;
+  border: none;
+  background-color: #8BC34A;
+  color: white;
+  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.25); }
+
 /*Special text*/
 b {
   font-weight: 500;
@@ -1195,7 +1329,6 @@ a.grey:link, a.grey:visited {
 a.grey:hover, a.grey:active {
   text-decoration: underline; }
 
-/*Add colors used in this file rather than importing every single one*/
 /*The black bar at the top of the page*/
 div.toolbar {
   position: fixed;
@@ -1262,161 +1395,6 @@ h1.toolbar {
   background: #424242;
   color: #757575; }
 
-h2.lessontitle {
-  font-size: 3em;
-  font-weight: 700;
-  color: #757575;
-  padding-bottom: 0;
-  padding-left: 0; }
-
-button.wordlist {
-  margin-right: 5px; }
-
-#viewlesson {
-  background-color: #FF9800; }
-
-#entertainment {
-  background-color: #2196F3; }
-
-#quiz {
-  background-color: #8BC34A; }
-
-/*Word list stuff*/
-#wordlist {
-  background-color: #FAFAFA;
-  position: relative;
-  padding: 0;
-  max-width: 1000px;
-  width: 95%;
-  min-width: 600px; }
-
-a.languagereturn:link, a.languagereturn:visited {
-  font-size: 0.8em;
-  text-align: left;
-  color: #BDBDBD; }
-
-div.word {
-  width: 100%;
-  height: 100px;
-  border-top: solid 1px #E0E0E0;
-  border-bottom: solid 2px #FFFFFF; }
-
-div.wordnumber {
-  display: inline-block;
-  width: 100px;
-  height: 100px;
-  background-color: #F5F5F5; }
-
-h1.wordnumber {
-  margin-top: 10px;
-  font-size: 4em;
-  color: #BDBDBD;
-  padding: 0; }
-
-img.wordimage {
-  display: inline-block;
-  position: relative;
-  margin-top: 15px;
-  margin-left: 15px;
-  margin-right: 15px;
-  vertical-align: top;
-  width: 100px; }
-
-div.info {
-  display: inline-block; }
-
-h3.korean {
-  font-family: 'Noto Sans', sans-serif;
-  color: #212121;
-  font-size: 1.5em;
-  margin-right: 10px;
-  display: inline;
-  padding: 0; }
-
-h3.romanization {
-  color: #BDBDBD;
-  font-size: 1em;
-  display: inline;
-  padding: 0; }
-
-h3.definition {
-  color: #424242;
-  font-size: 1.2em;
-  padding: 0; }
-
-div.progress {
-  height: 100px;
-  display: inline-block;
-  float: right;
-  padding-left: 22px;
-  padding-right: 22px; }
-
-p.progress {
-  color: #616161;
-  font-size: 0.8em;
-  text-align: center;
-  line-height: 100%;
-  padding: 0;
-  padding-top: 35px; }
-
-p.progressnumber {
-  color: #BDBDBD;
-  text-align: center;
-  line-height: 100%;
-  padding: 0;
-  font-weight: 600; }
-
-div.moreinfo {
-  display: inline-block;
-  background: #E0E0E0;
-  width: 75px;
-  height: 75px;
-  border-radius: 50px;
-  float: right;
-  margin-top: 15px;
-  margin-right: 20px; }
-
-p.moreinfo {
-  color: #424242;
-  text-align: center;
-  text-transform: uppercase;
-  padding: 0;
-  font-size: 0.7em;
-  margin-top: 15px; }
-
-div.togglewords {
-  float: right;
-  top: 15px;
-  display: inline-block; }
-
-span.togglewords {
-  display: inline-block;
-  background: #EEEEEE;
-  width: 50px;
-  padding: 2px;
-  height: 15px;
-  border-radius: 12px; }
-
-span.circle {
-  display: block;
-  top: -7px;
-  left: -13px;
-  background: #00BCD4;
-  width: 30px;
-  height: 30px;
-  border-radius: 30px;
-  box-shadow: 0 0 6px 1px rgba(0, 0, 0, 0.2); }
-
-p.remainder {
-  padding: 0;
-  margin: 0;
-  display: inline-block;
-  color: #9E9E9E;
-  font-size: 0.8em;
-  font-weight: 500;
-  margin-right: 5px;
-  top: -5px; }
-
 /* Slide title */
 .slidetitle {
   color: #FF5252;
@@ -1457,5 +1435,38 @@ p.arrows {
   padding: 0;
   font-size: 0.7em;
   color: #00BCD4; }
+
+div.togglewords {
+  float: right;
+  top: 15px;
+  display: inline-block; }
+
+span.togglewords {
+  display: inline-block;
+  background: #EEEEEE;
+  width: 50px;
+  padding: 2px;
+  height: 15px;
+  border-radius: 12px; }
+
+span.circle {
+  display: block;
+  top: -7px;
+  left: -13px;
+  background: #00BCD4;
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  box-shadow: 0 0 6px 1px rgba(0, 0, 0, 0.2); }
+
+p.remainder {
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  color: #9E9E9E;
+  font-size: 0.8em;
+  font-weight: 500;
+  margin-right: 5px;
+  top: -5px; }
 
 /*# sourceMappingURL=style.css.map */

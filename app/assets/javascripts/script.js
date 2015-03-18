@@ -114,3 +114,12 @@ for (var i = 0; i < lessons; i++){
 		})
 	}
 }
+
+//Wordlist page
+
+var words = $("div.word").length;
+for (var i = 1; i <= words; i++){
+
+	$("div.wordnumber").eq(i-1)
+		.append("<h1 class='wordnumber'>" + i + "</h1>")
+}

@@ -1,12 +1,51 @@
 <!-- Test page to see if can access lessons_lesson -->
 <%= provide(:title, @lesson.title) %>
-<h1>Lesson: <%= @lesson.title %></h1>
-<%= @words.find_each do |w| %>
-<%= w.word%>
-<% end %>
 
-<!--lesson_slide GET    /lessons/:lesson_id/slides/:id(.:format)      slides#show-->
-<%= @slides.find_each do |slide| %>
-<li>page: <%= link_to slide.id ,lesson_slide_path(@lesson.id, slide.id) %></li>
-<% end %>
+<div class="holder">
+	<h2 class="lessontitle"><%= @lesson.number%>과 <%= @lesson.title %></h2>
+	<a class="grey" href=".">Return to all lessons</a><br><br>
 
+	<button class="wordlist" id="viewlesson">View lesson</button>
+	<button class="wordlist" id="entertainment">Entertainment</button>
+	<button class="wordlist" id="quiz">Quiz</button>
+	
+	<div class="togglewords">
+		<center>
+		<p class="remainder">Remaining words</p>
+		<span class="togglewords">
+			<span class="circle"></span>
+		</span>
+		</center>
+	</div>
+</div>
+
+<div class="standalone" id="wordlist">
+	<div class="section">
+		<%= @words.find_each do |w| %>
+		<div class="word">
+			<div class="wordnumber">
+				<h1 class="wordnumber"></h1>
+			</div>
+			<img class="wordimage" src="http://chelseavalentinesday.com/peck/img/usa.svg">
+			<div class="info">
+				<h3 class="korean"><%= w.word %></h3>
+				<h3 class="romanization">(<%= w.romanization %>)</h3>
+				<h3 class="definition"><%= w.definition_one %></h3>
+			</div>
+
+			<div class="moreinfo">
+				<p class="moreinfo">More<br> info</p>
+			</div>
+
+			<div class="progress">
+				<p class="progress">
+					Progress
+				</p>
+				<p class="progressnumber">
+					0/3
+				</p>
+			</div>
+		</div>
+		<% end %>
+	</div>
+</div>

@@ -3,3 +3,12 @@
 <%= @slides.find_each do |s| %>
 	<li><%= s.title %></li>
 <% end %>
+
+<!--- this was on the word list page (show.html.erb) -->
+
+
+<!--lesson_slide GET    /lessons/:lesson_id/slides/:id(.:format)      slides#show-->
+
+<%= @slides.find_each do |slide| %>
+<li>page: <%= link_to slide.id ,lesson_slide_path(@lesson.id, slide.id) %></li>
+<% end %>

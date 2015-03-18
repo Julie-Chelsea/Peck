@@ -1,5 +1,6 @@
 //Import statements
 @import 'colors';
+@import 'background';
 @import 'font';
 @import 'page';
 @import 'home';
@@ -7,192 +8,6 @@
 @import 'signup';
 @import 'header';
 @import 'footer';
-
-h2.lessontitle{
-	font-size: 3em;
-	font-weight: 700;
-	color: $grey600;
-	padding-bottom: 0;
-	padding-left: 0;
-}
-
-button.wordlist {
-	margin-right: 5px;
-}
-
-#viewlesson{
-	background-color: $orange500;
-}
-
-#entertainment{
-	background-color: $blue500;
-}
-
-#quiz{
-	background-color: $lightgreen500;
-}
-
-/*Word list stuff*/
-#wordlist{
-	background-color: $grey50;
-	position: relative;
-	padding: 0;
-	max-width: 1000px;
-	width: 95%;
-	min-width: 600px;
-}
-
-a.languagereturn:link, a.languagereturn:visited{
-	font-size: 0.8em;
-	text-align: left;
-	color: $grey400;
-}
-
-div.word{
-	@extend .remove;
-	width: 100%;
-	height: 100px;
-	border-top: solid 1px $grey300;
-	border-bottom: solid 2px $white;
-}
-
-div.wordnumber{
-	display: inline-block;
-	width: 100px;
-	height: 100px;
-	background-color: $grey100;
-}
-
-h1.wordnumber{
-	margin-top: 10px;
-	font-size: 4em;
-	color: $grey400;
-	padding: 0;
-}
-
-img.wordimage{
-	display: inline-block;
-	position: relative;
-	margin-top: 15px;
-	margin-left: 15px;
-	margin-right: 15px;
-	vertical-align: top;
-	width: 100px;
-}
-
-div.info{
-	@extend .remove;
-	display: inline-block;
-}
-
-h3.korean{
-	font-family: 'Noto Sans', sans-serif;
-	color: $grey900;
-	font-size: 1.5em;
-	margin-right: 10px;
-	display: inline;
-	padding: 0;
-}
-
-h3.romanization{
-	color: $grey400;
-	font-size: 1em;
-	display: inline;
-	padding: 0;
-}
-
-h3.definition{
-	color: $grey800;
-	font-size: 1.2em;
-	padding: 0;
-}
-
-div.progress{
-	height: 100px;
-	display: inline-block;
-	float: right;
-	padding-left: 22px;
-	padding-right: 22px;
-}
-
-p.progress{
-	color: $grey700;
-	font-size: 0.8em;
-	text-align: center;
-	line-height: 100%;
-	padding: 0;
-	padding-top: 35px;
-}
-
-p.progressnumber{
-	color: $grey400;
-	text-align: center;
-	line-height: 100%;
-	padding: 0;
-	font-weight: 600;
-}
-
-div.moreinfo{
-	display: inline-block;
-	background: $grey300;
-	width: 75px;
-	height: 75px;
-	border-radius: 50px;
-	float: right;
-	margin-top: 15px;
-	margin-right: 20px;
-}
-
-p.moreinfo{
-	color: $grey800;
-	text-align: center;
-	text-transform: uppercase;
-	padding: 0;
-	font-size: 0.7em;
-	margin-top: 15px;
-}
-
-//Toggle words
-div.togglewords{
-	@extend .remove;
-	float: right;
-	top: 15px;
-	display: inline-block;
-}
-
-span.togglewords{
-	@extend .remove;
-	display: inline-block;
-	background: $grey200;
-	width: 50px;
-	padding: 2px;
-	height: 15px;
-	border-radius: 12px;
-}
-
-span.circle{
-	@extend .remove;
-	display: block;
-	top: -7px;
-	left: -13px;
-	background: $cyan500;
-	width: 30px;
-	height: 30px;
-	border-radius: 30px;
-	box-shadow: 0 0 6px 1px rgba(0, 0, 0, 0.2);
-}
-
-p.remainder{
-	@extend .remove;
-	padding: 0;
-	margin: 0;
-	display: inline-block;
-	color: $grey500;
-	font-size: 0.8em;
-	font-weight: 500;
-	margin-right: 5px;
-	top: -5px;
-}
 
 /* Slide title */
 .slidetitle{
@@ -242,4 +57,46 @@ p.arrows{
 	padding: 0;
 	font-size: 0.7em;
 	color: $cyan500;
+}
+
+//Toggle words
+div.togglewords{
+	@extend .remove;
+	float: right;
+	top: 15px;
+	display: inline-block;
+}
+
+span.togglewords{
+	@extend .remove;
+	display: inline-block;
+	background: $grey200;
+	width: 50px;
+	padding: 2px;
+	height: 15px;
+	border-radius: 12px;
+}
+
+span.circle{
+	@extend .remove;
+	display: block;
+	top: -7px;
+	left: -13px;
+	background: $cyan500;
+	width: 30px;
+	height: 30px;
+	border-radius: 30px;
+	box-shadow: 0 0 6px 1px rgba(0, 0, 0, 0.2);
+}
+
+p.remainder{
+	@extend .remove;
+	padding: 0;
+	margin: 0;
+	display: inline-block;
+	color: $grey500;
+	font-size: 0.8em;
+	font-weight: 500;
+	margin-right: 5px;
+	top: -5px;
 }

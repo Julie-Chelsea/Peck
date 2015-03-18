@@ -1,0 +1,93 @@
+@import 'colors';
+@import 'page';
+
+/*Korean language page*/
+#koreanpage{
+	margin-top: 25px;
+	padding-top: 50px;
+}
+
+/*Header in Korean: 한국어*/
+h2.language1{
+	padding: 0;
+	margin: 0;
+	margin-left: -5px;
+	display: inline;
+	font-weight: 400;
+	color: $grey700;
+}
+
+/*Header in English: Korean*/
+h2.language2{
+	padding: 0;
+	margin: 0;
+	display: inline;
+	color: $grey500;
+}
+
+/*Holds resume button & view all stats*/
+div.resume{
+	padding: 0;
+	margin: 0;
+	margin-top: 25px;
+	display: inline-block;
+	float: right;
+}
+
+button.resume{
+	background-color: $blue500;
+}
+
+div.lesson{
+	@extend .remove;
+	display: inline-block;
+	width: 250px;
+}
+
+div.lesson + div.lesson {
+	padding-left: 20px;
+}
+
+/*Top part of lesson div*/
+div.lessonimage{
+	display: inline-block;
+	width: 250px;
+	height: 135px;
+}
+
+.lessonnumber{
+	font-size: 5em;
+	color: $white;
+	padding: 0;
+	margin-top: 20px;
+	opacity: 0.2;
+}
+
+/*Bottom part of lesson div*/
+div.lessontitle{
+	@extend .remove;
+	display: block;
+	width: 250px;
+	margin: 0;
+	padding: 0;
+}
+
+p.lessontitle{
+	padding: 0;
+	padding-left: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin: 0;
+	color: white;
+	font-size: 16px;
+	font-weight: 500;
+}
+
+/*Create invisible placeholder lessons, when lessons aren't a length of a multiple of 3, just to make layout look better*/
+.invisibleimage{
+	@extend div.lessonimage;
+}
+
+.invisibletitle{
+	@extend div.lessontitle;
+}

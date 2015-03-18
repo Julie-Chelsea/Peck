@@ -111,3 +111,13 @@ a.no:link, a.no:visited{
 a.no:hover, a.no:active{
 	text-decoration: none;
 }
+
+a.grey:link, a.grey:visited{
+	font-size: 0.8em;
+	color: $grey400;
+	text-decoration: none;
+}
+
+a.grey:hover, a.grey:active{
+	text-decoration: underline;
+}

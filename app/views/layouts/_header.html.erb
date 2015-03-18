@@ -17,8 +17,9 @@
 			<h1 class="toolbar"><%= link_to "Peck", root_path, class: "no" %></h1>
 
 		<% if logged_in? %>
-			<%= link_to "Log out", logout_path, class: "button no tools", id: 'logout', method: "delete" %>
 			<%= link_to "Profile", current_user, class: 'button no tools', id:'profile' %>
+			<%= link_to "Log out", logout_path, class: "button no tools", id: 'logout', method: "delete" %>
+			
 
 			<% else %>
 				<%= link_to "Sign up", signup_path, class: "button no tools", id: 'signup' %>

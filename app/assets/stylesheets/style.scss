@@ -3,6 +3,7 @@
 @import 'font';
 @import 'page';
 @import 'home';
+@import 'lessons';
 @import 'signup';
 @import 'header';
 @import 'footer';
@@ -191,84 +192,6 @@ p.remainder{
 	font-weight: 500;
 	margin-right: 5px;
 	top: -5px;
-}
-
-/*Korean language page*/
-h2.language1{
-	@extend .remove;
-	display: inline;
-	margin-left: -30px;
-	font-weight: 400;
-	color: $grey700;
-}
-
-h2.language2{
-	@extend .remove;
-	display: inline;
-	margin-left: -35px;
-	color: $grey500;
-}
-
-div.resume{
-	@extend .remove;
-	display: inline-block;
-	float: right;
-}
-
-button.resume{
-	@extend .remove;
-	background-color: $blue500;
-}
-
-a.stats:link, a.stats:visited{
-	@extend a.languagereturn:link;
-}
-
-div.lesson{
-	@extend .remove;
-	display: inline-block;
-	width: 250px;
-	margin-left: 30px;
-	margin-bottom: 35px;
-}
-
-div.lessonimage{
-	@extend .remove;
-	display: inline-block;
-	width: 250px;
-	height: 135px;
-	background-color: $grey800;
-}
-
-h1.lessonnumber{
-	position: absolute;
-	font-size: 5em;
-	color: $white;
-	padding: 0;
-	top: 25px;
-	left: 105px;
-	opacity: 0.3;
-}
-
-div.lessontitle{
-	@extend .remove;
-	display: block;
-	width: 250px;
-	margin: 0;
-	margin-top: -4px;
-	padding: 0;
-	background-color: $grey900;
-}
-
-p.lessontitle{
-	padding: 0;
-	padding-left: 10px;
-	padding-top: 5px;
-	padding-bottom: 5px;
-	margin: 0;
-	color: white;
-	font-size: 16px;
-	font-weight: 500;
 }
 
 /* Slide title */

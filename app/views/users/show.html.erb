@@ -1,11 +1,33 @@
-<%= provide(:title, @user.name) %>
-<div class="row">
-	<aside class="col-md-4">
-		<section class="user_info">
-			<h1>
-				<%= gravatar_for @user %>
-				<%= @user.name %>
-			</h1>	
-		</section>
-	</aside>
+<%= provide(:title, @user.name + "\u2019s profile") %>
+
+<div class="holder">
+	<h2 class="dashboardtitle">Dashboard</h2>
+	<p class="welcome">Welcome back, <%= @user.name %>!</p>
+
 </div>
+
+<div class="container dashboard">
+	<div class="basicinfo">
+		<span class="avatar">
+			<%= gravatar_for @user, class: 'avatar'%>
+			<div class="level">
+				<span class="level"><p class="no level info">Lv 999</p></span>
+				<span class="levelname"><p class="no levelname info">Derp master</p></span>
+			</div>
+		</span>
+		<span class="userinfo">
+			<h3 class="username"> <%= @user.username %></h3>
+			<p class="no info"><b class="no">Last seen:</b> 4 months ago</p><br>
+			<p class="no info"><b class="no">Member since:</b> January 18, 2014</p><br>
+
+			<hr class="userinfo">
+
+			<span class="square"></span> <p class="no info">Achievements</p><br>
+			<span class="square"></span><p class="no info">Your progress</p><br>
+			<span class="square"></span><p class="no info">Settings</p>
+		</span>
+	</div>
+</div>
+<h1>
+	<%= gravatar_for @user %>
+</h1>	

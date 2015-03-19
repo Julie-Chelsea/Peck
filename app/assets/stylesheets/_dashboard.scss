@@ -1,0 +1,50 @@
+@import 'colors';
+
+/*Dark bold 'Dashboard' at top'*/
+.dashboardtitle{
+	color: $grey800;
+	padding: 0;
+	margin: 0;
+	font-size: 2.5em;
+	font-weight: 800;
+}
+
+/*Welcome back, -user's name-*/
+.welcome{
+	color: $grey500;
+	padding: 0;
+}
+
+.avatar{
+	width: 100px;
+}
+
+
+.info{
+	font-size: 0.8em;
+	margin-bottom: 0;
+}
+
+.dashboard{
+	margin-top: 20px;
+}
+
+
+span.level{
+	padding: 4px;
+	background-color: $lightblue600;
+	display: inline-block;
+}
+p.level{
+	font-weight: 700;
+	color: white;
+}
+
+span.levelname{
+	padding: 4px;
+	background-color: $lightblue500;
+	display: inline-block;
+}
+p.levelname{
+	color: white;
+}

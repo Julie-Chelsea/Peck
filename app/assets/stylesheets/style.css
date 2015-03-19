@@ -754,6 +754,11 @@ p {
   padding: 20px;
   margin-bottom: 15px; }
 
+p.no {
+  padding: 0;
+  margin-bottom: 0;
+  display: inline-block; }
+
 button {
   font-size: 1em;
   font-weight: 500;
@@ -779,6 +784,10 @@ button {
 b {
   font-weight: 500;
   text-transform: uppercase; }
+
+b.no {
+  text-transform: none;
+  font-weight: 600; }
 
 /*Links*/
 a:link, a:visited {
@@ -865,6 +874,10 @@ h1.title {
   color: white;
   padding-top: 200px; }
 
+#sky, #subtitle {
+  x-overflow: hidden;
+  y-overflow: hidden; }
+
 h5.subtitle {
   text-align: center;
   color: white;
@@ -949,10 +962,9 @@ h5.subtitle {
 .duckfamily {
   width: 150px; }
 
-#family2 {
-  top: 420px;
-  width: 200px;
-  -webkit-animation: swim2 10s linear 1s infinite; }
+#family1 {
+  top: 520px;
+  -webkit-animation: swim2 13s linear 3s infinite; }
 
 #family3 {
   top: 690px;
@@ -970,7 +982,7 @@ h5.subtitle {
   60% {
     opacity: 1; }
   80% {
-    opacity: 0.7; }
+    opacity: 0.9; }
   100% {
     opacity: 0;
     transform: translate(800px, 0); } }
@@ -1383,6 +1395,11 @@ p {
   padding: 20px;
   margin-bottom: 15px; }
 
+p.no {
+  padding: 0;
+  margin-bottom: 0;
+  display: inline-block; }
+
 button {
   font-size: 1em;
   font-weight: 500;
@@ -1408,6 +1425,10 @@ button {
 b {
   font-weight: 500;
   text-transform: uppercase; }
+
+b.no {
+  text-transform: none;
+  font-weight: 600; }
 
 /*Links*/
 a:link, a:visited {
@@ -1498,6 +1519,46 @@ h1.toolbar {
 #logout {
   background: #424242;
   color: #757575; }
+
+/*Dark bold 'Dashboard' at top'*/
+.dashboardtitle {
+  color: #424242;
+  padding: 0;
+  margin: 0;
+  font-size: 2.5em;
+  font-weight: 800; }
+
+/*Welcome back, -user's name-*/
+.welcome {
+  color: #9E9E9E;
+  padding: 0; }
+
+.avatar {
+  width: 100px; }
+
+.info {
+  font-size: 0.8em;
+  margin-bottom: 0; }
+
+.dashboard {
+  margin-top: 20px; }
+
+span.level {
+  padding: 4px;
+  background-color: #039BE5;
+  display: inline-block; }
+
+p.level {
+  font-weight: 700;
+  color: white; }
+
+span.levelname {
+  padding: 4px;
+  background-color: #03A9F4;
+  display: inline-block; }
+
+p.levelname {
+  color: white; }
 
 /* Slide title */
 .slidetitle {

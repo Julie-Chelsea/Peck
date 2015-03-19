@@ -3,6 +3,11 @@ h1.title{
 	padding-top: 200px;
 }
 
+#sky, #subtitle{
+	x-overflow: hidden;
+	y-overflow: hidden;
+}
+
 h5.subtitle{
 	text-align: center;
 	color: white;
@@ -109,15 +114,15 @@ h5.subtitle{
 }
 
 /*Duckie families*/
+
 .duckfamily{
 	@extend .duck;
 	width: 150px;
 }
 
-#family2{
-	top: 420px;
-	width: 200px;
-	-webkit-animation: swim2 10s linear 1s infinite;
+#family1{
+	top:520px;
+	-webkit-animation: swim2 13s linear 3s infinite;
 }
 
 #family3{
@@ -141,7 +146,7 @@ h5.subtitle{
 		opacity: 1;
 	}
 	80%{
-		opacity: 0.7;
+		opacity: 0.9;
 	}
 	100%{
 		opacity: 0;

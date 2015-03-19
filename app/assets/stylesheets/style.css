@@ -908,26 +908,72 @@ h5.subtitle {
   100% {
     transform: translate(1100px, 0);
     opacity: 0; } }
-.duck {
-  position: relative;
+.duck, .duckfamily {
+  position: absolute;
   width: 50px;
   opacity: 0;
-  -webkit-animation: swim 6s linear 0s infinite;
+  left: 0;
+  top: 200px;
   -webkit-backface-visibility: hidden; }
 
+/*Individual ducks*/
+#duck1 {
+  top: 370px;
+  -webkit-animation: swim 6s linear 0s infinite; }
+
+#duck3 {
+  top: 605px;
+  -webkit-animation: swim 9s linear 5s infinite; }
+
+#duck4 {
+  top: 615px;
+  -webkit-animation: swim 9s linear 2s infinite; }
+
+/*For individual ducks*/
 @-webkit-keyframes swim {
   0% {
-    left: -200px;
+    left: 0;
     opacity: 0; }
-  40% {
+  5% {
+    transform: translate(0, 0); }
+  10% {
     opacity: 1; }
   60% {
     opacity: 1; }
   80% {
-    opacity: 0.5; }
+    opacity: 0.7; }
   100% {
     opacity: 0;
-    transform: translate(1200px, 0); } }
+    transform: translate(950px, 0); } }
+/*Duckie families*/
+.duckfamily {
+  width: 150px; }
+
+#family2 {
+  top: 420px;
+  width: 200px;
+  -webkit-animation: swim2 10s linear 1s infinite; }
+
+#family3 {
+  top: 690px;
+  -webkit-animation: swim2 7s linear 5s infinite; }
+
+/*For family ducks*/
+@-webkit-keyframes swim2 {
+  0% {
+    left: 0;
+    opacity: 0; }
+  5% {
+    transform: translate(0, 0); }
+  10% {
+    opacity: 1; }
+  60% {
+    opacity: 1; }
+  80% {
+    opacity: 0.7; }
+  100% {
+    opacity: 0;
+    transform: translate(800px, 0); } }
 .remove, body, div.toolbarContents, div.container, div.standalone, div.holder, div.slide, div.title, div.section, div.word, div.info, div.toolbar, .button, .tools, div.togglewords, span.togglewords, span.circle, p.remainder {
   position: relative;
   top: 0;

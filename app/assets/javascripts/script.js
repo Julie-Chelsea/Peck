@@ -1,16 +1,3 @@
-var clouds = ['cloud1', 'cloud2', 'cloud3', 'cloud4', 'cloud5'];
-
-// function clouds () {
-// 	var choice = Math.floor(Math.random() * clouds.length);
-// 	$("<img src='layout/" + choice + ".svg'>")
-// 		.appendTo("div.title")
-// 		.css({
-// 			"top": "",
-// 			"left": "",
-			
-// 		})
-// }
-
 //Korean page javascript
 var lessons = $("div.lessonimage").length;
 

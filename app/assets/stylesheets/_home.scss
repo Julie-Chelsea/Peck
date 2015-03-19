@@ -8,3 +8,82 @@ h5.subtitle{
 	color: white;
 	font-size: 2em;
 }
+
+.cloud{
+	position: absolute;
+	width: 150px;
+	left: -100px;
+	opacity: 0;
+	top: 50px;
+	-webkit-animation: float 10s linear 0s infinite;
+	-webkit-backface-visibility: hidden;
+}
+
+#cloud2{
+	top: 100px;
+	-webkit-animation: float 11s linear 1s infinite;
+}
+
+#cloud3{
+	top: 175px;
+	-webkit-animation: float 12s linear 2s infinite;
+}
+
+#cloud4{
+	top: 2300px;
+	-webkit-animation: float 7s linear 4s infinite;
+}
+
+#cloud5{
+	top: 300px;
+	-webkit-animation: float 14s linear 5s infinite;
+}
+
+@-webkit-keyframes float{
+	0%{
+		left: -100px;
+		opacity: 0;
+	}
+	20%{
+		opacity: 0.2;
+	}
+	60%{
+		opacity: 0.3;
+	}
+	80%{
+		opacity: 0.2;
+	}
+	100%{
+		transform: translate(1100px, 0);
+		opacity: 0;
+	}
+}
+
+.duck{
+	position: relative;
+	width: 50px;
+	opacity: 0;
+	-webkit-animation: swim 6s linear 0s infinite;
+	-webkit-backface-visibility: hidden;
+}
+
+@-webkit-keyframes swim {
+	0%{
+		left: -200px;
+		opacity: 0;
+	}
+	40%{
+		opacity: 1;
+	}
+	60%{
+		opacity: 1;
+	}
+	80%{
+		opacity: 0.5;
+	}
+
+	100%{
+		opacity: 0;
+		transform: translate(1200px, 0);
+	}
+}
